@@ -1,0 +1,41 @@
+[
+    {
+        "username": "DM22",
+        "email": "mmercer@crc2.com",
+        "password": "tilapia1",
+        "firstname": "Matthew",
+        "lastname": "Mercer",
+        "creation_date": "2015-08-16",
+        "reputation_level": "Gaming Overlord",
+        "review_count": 3500,
+        "feedback_count": 2343
+    },
+    {
+        "username": "FjordStone",
+        "email": "travisw@crc2.com",
+        "password": "tilapia2",
+        "firstname": "Travis",
+        "lastname": "Willingham"
+    },
+    {
+        "username": "JesterLavorre",
+        "email": "lb22@crc2.com",
+        "password": "tilapia3",
+        "firstname": "Laura",
+        "lastname": "Bailey"
+    },
+    {
+        "username": "CadeucesClay",
+        "email": "mollymauk@crc2.com",
+        "password": "tilapia4",
+        "firstname": "Taliesin",
+        "lastname": "Jaffe"
+    },
+    {
+        "username": "BeauregardLionett",
+        "email": "beaubeau@crc2.com",
+        "password": "tilapia5",
+        "firstname": "Marsha",
+        "lastname": "Ray"
+    }
+]
