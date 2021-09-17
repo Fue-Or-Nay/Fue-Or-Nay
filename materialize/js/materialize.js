@@ -12372,7 +12372,7 @@ $jscomp.polyfill = function (e, r, p, m) {
 
   Range.init($('input[type=range]'));
 })(cash, M.anime);
-
+// Carousel 
 var instance = M.Carousel.init({
   fullWidth: true
 });
@@ -12381,4 +12381,20 @@ document.addEventListener('DOMContentLoaded', function() {
   var instances = M.Carousel.init(elems, options);
 });
 
+// Triggers modal
+document.addEventListener('DOMContentLoaded', function() {
+
+  var elems = document.querySelectorAll('.modal');
+  var instances = M.Modal.init(elems);
+  
+  var singleModalElem = document.querySelector('#modal1');
+  var instance = M.Modal.getInstance(singleModalElem);
+  const modalbtn = document.querySelector('#open')
+  modalbtn.addEventListener('click', () => {
+    instance.open();
+    // Do other stuff
+  })
+});
+
+// Initializes Materialize
 M.AutoInit();
