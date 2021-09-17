@@ -1,0 +1,70 @@
+[
+    {
+        "title": "Grand Theft Auto V",
+        "release_date": "2013-09-17",
+        "rating_scale": "FUE",
+        "rating_avg": "8.9",
+        "genre": "Action RPG",
+        "esrb_rating": "M",
+        "description": "Test Description"
+    },
+    {
+        "title": "The Witcher 3 Wild Hunt",
+        "release_date": "2015-05-08",
+        "genre": "Action RPG",
+        "esrb_rating": "M",
+        "description": "Test Description"
+    },
+    {
+        "title": "Portal 2",
+        "release_date": "2011-04-18",
+        "genre": "Puzzle Shooter",
+        "esrb_rating": "E 10+",
+        "description": "Test Description"
+    },
+    {
+        "title": "Tomb Raider (2013)",
+        "release_date": "2013-03-05",
+        "rating_scale": "NAY",
+        "rating_avg": "1.9",
+        "genre": "Action Adventure",
+        "esrb_rating": "M",
+        "description": "Test Description"
+    },
+    {
+        "title": "Left 4 Dead 2",
+        "release_date": "2009-11-17",
+        "rating_scale": "KINDA FUE",
+        "rating_avg": "6.7",
+        "genre": "Action Shooter",
+        "esrb_rating": "M",
+        "description": "Test Description"
+    },
+    {
+        "title": "The Elder Scrolls V: Skyrim",
+        "release_date": "2011-11-11",
+        "rating_scale": "ON THE WAY TO FUE",
+        "rating_avg": "7.8",
+        "genre": "RPG",
+        "esrb_rating": "M",
+        "description": "Test Description"
+    },
+    {
+        "title": "Borderlands 2",
+        "release_date": "2012-09-18",
+        "rating_scale": "LOOKIN LIKE NAY",
+        "rating_avg": "3.3",
+        "genre": "FPS RPG",
+        "esrb_rating": "M",
+        "description": "Test Description"
+    },
+    {
+        "title": "Counter Strike: Global Offensive",
+        "release_date": "2012-08-01",
+        "rating_scale": "ON THE WAY TO NAY",
+        "rating_avg": "4.3",
+        "genre": "FPS",
+        "esrb_rating": "M",
+        "description": "Test Description"
+    }
+]

@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS fueornay_db;
+
+CREATE DATABASE fueornay_db;

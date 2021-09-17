@@ -1,0 +1,62 @@
+[
+    { 
+        "num_rating": "7.7",
+        "description": "This game was pretty decent for what it is. Very well made, loads of content, and the multiplayer is spot on!",
+        "game_id": 1,
+        "user_id": 1
+    },
+    {
+        "num_rating": "9.9",
+        "description": "Toss a coin to your witcher, o vally o plenty....",
+        "game_id": 2,
+        "user_id": 1
+    },
+    {
+        "num_rating": "5.6",
+        "description": "The cake is a lie!",
+        "game_id": 3,
+        "user_id": 1
+    },
+    {
+        "num_rating": "2.1",
+        "description": "Who seriously plays these types of games? Why on earth would we promote running people over with cars and firing rocket launchers off of skyscrapers? THINK OF THE CHILDREN!!!",
+        "game_id": 1,
+        "user_id": 3
+    },
+    {
+        "num_rating": "10",
+        "description": "Yo this be fire man",
+        "game_id": 1,
+        "user_id": 2
+    },
+    {
+        "num_rating": "10",
+        "description": "This game LIT",
+        "game_id": 4,
+        "user_id": 2
+    },
+    {
+        "num_rating": "2",
+        "description": "Ain't my thing",
+        "game_id": 3,
+        "user_id": 4
+    },
+    {
+        "num_rating": "6.7",
+        "description": "I found the puzzles to be phenomenal but the story was lackluster. Worth a playthrough, nothing more.",
+        "game_id": 3,
+        "user_id": 5
+    },
+    {
+        "num_rating": "9.8",
+        "description": "Traditionally this game really isn't my style, but it was very well made. Rockstar really hit the nail on the head with this one!",
+        "game_id": 1,
+        "user_id": 5
+    },
+    {
+        "num_rating": "10",
+        "description": "I LOVE LOOTER SHOOTERS AND THIS IS NO EXCEPTION TO THAT STATEMENT!!!! 10/10 MUST PLAY!!!",
+        "game_id": 7,
+        "user_id": 5
+    }
+]
