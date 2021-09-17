@@ -54,4 +54,42 @@ router.post('/', (req, res) => {
     });
 });
 
+router.put('/:id', (req, res) => {
+
+    User.update(req.body, {
+        where: {
+            id: req.params.id,
+        },
+    }) 
+    .then((user) => {
+
+        if (req.body.gameIds.length) {
+            const userGameArray = req.body.gameIds.map((game_id) => {
+                return {
+                    user_id: req.params.id,
+                    game_id: game_id,
+                };
+            });
+            return userGame.bulkCreate(userGameArray);
+        }
+        res.status(200).json(user);
+    })
+    .then((userGameIds) => res.status(200).json(userGameIds))
+    .catch((err) => {
+        res.status(400).json(err);
+    });
+});
+
+router.delete('/:id', (req, res) => {
+    
+    User.destroy({
+        where: {
+            id: req.params.id,
+        },
+    })
+    .then((deletedUser) => res.status(200).json(deletedUser))
+    .catch((err) => {
+        res.status(400).json(err);
+    });
+});
 module.exports = router;
