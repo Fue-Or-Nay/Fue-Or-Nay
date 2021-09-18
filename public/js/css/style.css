@@ -1,0 +1,26 @@
+body{
+    background-image: url(https://wallpapercave.com/wp/wp6473374.jpg);
+}
+#firstTime{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOdli1FCaS-5etE8kl7XODltCDAERiobkCkaAaF9HguwwrhQSbQpu2ooFPruW8egeHW5Y&usqp=CAU);
+    margin: auto;
+    border: 5px solid cyan;
+    width: 50%;
+}
+
+#member{  
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOdli1FCaS-5etE8kl7XODltCDAERiobkCkaAaF9HguwwrhQSbQpu2ooFPruW8egeHW5Y&usqp=CAU);
+    margin: auto;
+    border: 5px solid cyan;
+    width: 50%;
+}
+
+
+p{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.9rem;
+    color:cyan;
+}
+
+
