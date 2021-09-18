@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const { User, Game, Console } = require('../../models');
+const  consoleGame = require('../../models/consoleGame');
+const { Game, Console } = require('../../models');
 
 router.get('/', async (req, res) => {
     try {
@@ -21,7 +22,7 @@ router.get('/:id', async (req, res) => {
         });
 
         if (!singleConsole) {
-            res.status(404).json({message: 'No user is associated with this ID!'});
+            res.status(404).json({message: 'No console is associated with this ID!'});
             return;
         }
         res.status(200).json(singleConsole);
@@ -29,6 +30,67 @@ router.get('/:id', async (req, res) => {
     catch (err) {
         res.status(500).json(err);
     }
+});
+
+router.post('/', (req, res) => {
+    
+    Console.create(req.body)
+    .then((console) => {
+
+        if (req.body.gameIds.length) {
+            const userGameArray = req.body.gameIds.map((game_id) => {
+                return {
+                    console_id: console.id,
+                    game_id: game_id,
+                };
+            });
+            return consoleGame.bulkCreate(userGameArray);
+        }
+        res.status(200).json(console);
+    })
+    .then((newConsole) => res.status(200).json(newConsole))
+    .catch((err) => {
+        res.status(400).json(err);
+    });
+});
+
+router.put('/:id', (req, res) => {
+
+    Console.update(req.body, {
+        where: {
+            id: req.params.id,
+        },
+    })
+    .then((console) => {
+
+        if (req.body.gameIds.length) {
+            const userGameArray = req.body.gameIds.map((game_id) => {
+                return {
+                    console_id: console.id,
+                    game_id: game_id,
+                };
+            });
+            return consoleGame.bulkCreate(userGameArray);
+        }
+        res.status(200).json(console);
+    })
+    .then((newConsole) => res.status(200).json(newConsole))
+    .catch((err) => {
+        res.status(400).json(err);
+    });
+});
+
+router.delete('/:id', (req, res) => {
+    
+    Console.destroy({
+        where: {
+            id: req.params.id,
+        },
+    })
+    .then((deletedConsole) => res.status(200).json(deletedConsole))
+    .catch((err) => {
+        res.status(400).json(err);
+    });
 });
 
 module.exports = router;
