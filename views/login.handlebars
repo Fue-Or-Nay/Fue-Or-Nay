@@ -1,6 +1,8 @@
 <main>
-  <p>Sign-up Here!</p>
-  <div id="firstTime">
+
+  <h2 class="text">Sign-up Here!</h2>
+  
+  <div class="firstTime">
     <div class="row">
       <form class="col s12">
         <div class="row">
@@ -21,36 +23,40 @@
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input id="username" type="text">
-            <label for="username">Username</label>
+            <input id="usernameCreate" type="text">
+            <label for="usernameCreate">Username</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input id="password" type="password">
-            <label for="password">Password</label>
+            <input id="passwordCreate" type="password">
+            <label for="passwordCreate">Password</label>
           </div>
         </div>
       </form>
     </div>
   </div>
-  <p>Already a member? Sign in!</p>
-  <div id="member">
+
+  <h2 class="text">Already a member? Sign in!</h2>
+  <div class="member">
     <div class="row">
       <form class="col s12">
         <div class="row">
           <div class="input-field col s12">
-            <input id="username" type="text">
-            <label for="username">Username</label>
+            <input id="usernameLogin" type="text">
+            <label for="usernameLogin">Username</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input id="password" type="password">
-            <label for="password">Password</label>
+            <input id="passwordLogin" type="password">
+            <label for="passwordLogin">Password</label>
           </div>
         </div>
+        <button class="waves-effect waves-light btn" id="login" type="submit">Login</button>
       </form>
     </div>
   </div>
 </main>
+
+<script src="/public/js/login.js"></script>
