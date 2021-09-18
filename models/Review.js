@@ -25,6 +25,16 @@ Review.init(
                 notEmpty: true,
             },
         },
+        helpful: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+            defaultValue: 0,
+        },
+        not_helpful: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+            defaultValue: 0,
+        },
         game_id: {
             type: DataTypes.INTEGER,
             references: {

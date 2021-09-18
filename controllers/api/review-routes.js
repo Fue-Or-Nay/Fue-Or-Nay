@@ -1,5 +1,7 @@
 const router = require('express').Router();
 const { Review } = require('../../models');
+const { hasMany } = require('../../models/userGame');
+const withAuth = require('../../utils/auth');
 
 router.get('/', async (req, res) => {
     try {
@@ -25,6 +27,46 @@ router.get('/:id', async (req, res) => {
     catch (err) {
         res.status(500).json(err);
     }
+});
+
+router.post('/', withAuth, (req, res) => {
+    
+    Review.create({
+        num_rating: req.body.num_rating,
+        description: req.body.description,
+        game_id: req.body.game_id,
+        user_id: req.session.user_id
+    })
+    .then((newReview) => res.status(200).json(newReview))
+    .catch((err) => {
+        res.status(400).json(err);
+    });
+});
+
+router.put('/:id', withAuth, (req, res) => {
+
+    Review.update(req.body, {
+        where: {
+            id: req.params.id,
+        },
+    })
+    .then((updateReview) => res.status(200).json(updateReview))
+    .catch((err) => {
+        res.status(400).json(err);
+    });
+});
+
+router.delete('/:id', withAuth, (req, res) => {
+    
+    Review.destroy({
+        where: {
+            id: req.params.id,
+        },
+    })
+    .then((deletedReview) => res.status(200).json(deletedReview))
+    .catch((err) => {
+        res.status(400).json(err);
+    });
 });
 
 module.exports = router;
