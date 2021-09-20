@@ -2,11 +2,12 @@ const router = require('express').Router();
 const apiRoutes = require('./api');
 const homeRoutes = require('./home-routes');
 
-router.use('/api', apiRoutes);
 router.use('/', homeRoutes);
+router.use('/api', apiRoutes);
 
-router.use((req,res) => {
-    res.send("<h1>THE ROUTE IS NOT HOT, TURN BACK!</h1>")
-});
+
+// router.use((req,res) => {
+//     res.status(400).json(res)
+// });
 
 module.exports = router;
