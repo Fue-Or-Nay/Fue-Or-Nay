@@ -13,6 +13,8 @@
     "express-session": "^1.17.2",
     "materialize": "^1.0.0",
     "mysql2": "^2.3.0",
+    "node": "^16.9.1",
+    "node.js": "0.0.1-security",
     "rater-js": "^1.0.1",
     "sequelize": "^6.6.5",
     "sequelize-cli": "^6.2.0"
