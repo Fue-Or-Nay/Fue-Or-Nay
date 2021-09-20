@@ -1,18 +1,23 @@
 const login = async (event) => {
     event.preventDefault();
 
-    const username = document.getElementById('usernameLogin').value.trim();
-    const password = document.getElementById('passwordLogin').value.trim();
+
+    const username = document.querySelector('#usernameLogin').value.trim();
+    const password = document.querySelector('#passwordLogin').value.trim();
+
+    console.log(username, password)
 
     if (username && password) {
         const response = await fetch('/api/users/login', {
             method: 'POST',
-            body: JSON.stringify({username, password}),
+            body: JSON.stringify({ username, password }),
             headers: { 'Content-Type': 'application/json'},
         });
 
+        console.log(response)
+
         if (response.ok) {
-            console.log(response);
+            document.location.replace('/')
         }
         else {
             alert('Login Failed!')
@@ -20,4 +25,6 @@ const login = async (event) => {
     }
 };
 
-document.getElementById('login').addEventListener('submit', login);
+
+
+document.querySelector('#login').addEventListener('click', login);
