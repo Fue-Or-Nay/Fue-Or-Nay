@@ -1,13 +1,24 @@
-const rater = require('rater-js');
-var myRating = raterJs( {
-    element:document.querySelector("#rater"),
-    rateCallback:function rateCallback(rating, done) {
-      this.setRating(rating); 
-      done(); 
-    },
-    max: 5,
+var allSpan = document.getElementsByTagName('span');
 
-    // star size
-    starSize: 16,
-});
-myRating.enable();
+for(var x = 0; x < allSpan.length; x++)
+{
+    allSpan[x].onclick=function()
+    {
+        if(this.parentNode)
+        {
+            var childList = this.parentNode.getElementsByTagName('LI');
+            for(var y = 0; y< childList.length;y++)
+            {
+                var currentState = childList[y].style.display;
+                if(currentState=="none")
+                {
+                    childList[y].style.display="block";
+                }
+                else
+                {
+                    childList[y].style.display="none";
+                }
+            }
+        }
+    }
+};
