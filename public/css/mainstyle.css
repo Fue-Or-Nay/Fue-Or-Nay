@@ -2,7 +2,9 @@ body{
     background-image: url(https://wallpapercave.com/wp/wp6473374.jpg);
 }
 
-
+nav{
+    background-color: #270B64;
+}
 /* CSS for login */
 
 .firstTime{
