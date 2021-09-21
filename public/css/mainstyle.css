@@ -139,3 +139,13 @@ nav{
     text-align: center;
     
 }
+
+.logo {
+      height: 60px;
+      border: none;
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    height: 55px;
+  }
+}
