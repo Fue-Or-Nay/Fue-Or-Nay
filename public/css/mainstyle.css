@@ -1,5 +1,5 @@
 body{
-    background-image: url(https://wallpapercave.com/wp/wp6473374.jpg);
+    background-image: url(https://wallpaperaccess.com/full/1223962.jpg);
 }
 
 
@@ -31,55 +31,98 @@ body{
 
 /* CSS for Profile */
 
-.prof{
+/* .prof{
     display: flex;
     justify-content: space-evenly;
 }
 
 .pic{
-    background-color: darkblue;
-    height: 450px;
+    background-color: black;
+    height: 575px;
     width: 350px;
     color: white;
     margin: auto;
+    border: 5px solid cyan;
     margin-top: 60px;
+    margin-bottom: 40px;
 }
 
-img{    
+.info{
+    border: 5px solid cyan;
+    height: 30%;
+    width:375px;
+}
+
+.profPic{    
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-}
+    margin-top: 50px;
+} */
 
-.yoStuff{
+.prof{
     display: flex;
-    justify-content: space-evenly;
-    background-color: darkcyan;
-    height: 450px;
-    width: 700px;
+    flex-direction: column;
+    background-color: black;
+    height: 700px;
+    width: 730px;
+    color: white;
     margin: auto;
+    border: 5px solid cyan;
     margin-top: 60px;
+    margin-bottom: 40px;
 }
 
-.revScore{
+.profPic{    
+    margin: auto;
+}
+
+.info{
     height: 200px;
-    width: 200px;
-    background-color: darkgray;
-    margin: 15px;
+    width: 600px;
+    background-color: darkorchid;
+    margin:auto;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .badges{
-    height: 400px;
-    width: 350px;
-    background-color: darkgray;
-    margin: 15px;
+    background-color: darkslateblue;
+    height: 70px;
+    width: 300px;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+
+.selHold{
+    background-color: black;
+    width: 80%;
+    margin: auto;
+    border: 5px solid cyan;
 }
 
 .yoRev{
+    display: flex;
+    flex-direction: column;
     height: 500px;
     width: 80%;
-    background-color: darkslateblue;
+    background-color: black;
     margin: auto;
     margin-top: 80px;
+    border: 5px solid cyan;
+    color: cyan;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.rev{
+    margin: auto;
+    justify-content: center;
+    height: 300px;
+    width: 80%;
+    background-color: deeppink;
+    text-align: center;
 }
