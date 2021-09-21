@@ -1,27 +1,27 @@
-<main>
-    <!-- Game Card -->
-  <h1>{{game.title}}</h1>
-  <div class="row">
-    <div class="col s12 m6">
-      <div class="card">
-        <div class="card-image">
-          <img src="/Images/supermario64.jpg">
-          <span class="card-title">Available On: {{#each game.consoles}} [{{this.name}}] {{/each}}</span>
-          <span class="card-content">Release Date: {{game.release_date}}</span>
-          <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1"><i
+<h1 class="gameTitle">{{game.title}}</h1>
+  <br>
+  
+  <div class="row center-align" class="game">
+    <div class="gameBox" class="center-align">
+      <div class="card center-align">
+        <div class="card-image center-align black">
+          <img src="./public/Images/supermario64.jpg">
+          <span class="card-title black-text">Available On: {{#each game.consoles}} [{{this.name}}] {{/each}}</span>
+          <span class="card-content black cyan-text accent-1">Released: {{game.release_date}}</span>
+          <a class="thumb btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1"><i
               class="material-icons">thumbs_up_down</i></a>
         </div>
-        <div class="card-content">
-          <i class="material-icons">whatshot</i>
-          <i class="material-icons">whatshot</i>
-          <i class="material-icons">whatshot</i>
-          <i class="material-icons">whatshot</i>
-          <i class="material-icons">whatshot</i>
+        <div class="card-content black">
+          <i class="large material-icons pink-text lighten-5">whatshot</i>
+          <i class="large material-icons pink-text lighten-5">whatshot</i>
+          <i class="large material-icons pink-text lighten-5">whatshot</i>
+          <i class="large material-icons pink-text lighten-5">whatshot</i>
+          <i class="large material-icons pink-text lighten-5">whatshot</i>
         </div>
       </div>
     </div>
   </div>
-  <!-- Modal Structure -->
+
   <div id="modal1" class="modal">
     <div class="modal-content">
       <h4>Fue or Nay?</h4>
@@ -38,11 +38,11 @@
       <!--Flame rating-->
       <h5>How fuego was this game tho?</h5>
       <ul class="rate-area row">
-        <a class="waves-effect waves-teal btn-flat"><i class="material-icons">whatshot</i></a>
-        <a class="waves-effect waves-teal btn-flat"><i class="material-icons">whatshot</i></a>
-        <a class="waves-effect waves-teal btn-flat"><i class="material-icons">whatshot</i></a>
-        <a class="waves-effect waves-teal btn-flat"><i class="material-icons">whatshot</i></a>
-        <a class="waves-effect waves-teal btn-flat"><i class="material-icons">whatshot</i></a>
+        <a class="waves-effect waves-teal btn-flat"><i class="medium material-icons">whatshot</i></a>
+        <a class="waves-effect waves-teal btn-flat"><i class="medium material-icons">whatshot</i></a>
+        <a class="waves-effect waves-teal btn-flat"><i class="medium material-icons">whatshot</i></a>
+        <a class="waves-effect waves-teal btn-flat"><i class="medium material-icons">whatshot</i></a>
+        <a class="waves-effect waves-teal btn-flat"><i class="medium material-icons">whatshot</i></a>
       </ul>
       <!--Write review-->
       <h5>Tell us why!</h5>
@@ -58,15 +58,15 @@
       </div>
       </p>
       <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="submitReview">Submit Review</a>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Submit Review</a>
       </div>
   </div>
+
   <div>
-      {{!-- Review Section --}}
-    <h3>User Reviews</h3>
-    <a class="row" href="#">See all 2 reviews<i class="material-icons">chevron_right</i></a>
+    <h3 class="uRev">User Reviews</h3>
+    <a class="row" href="#">See All Reviews<i class="material-icons">chevron_right</i></a>
   </div>
+
   {{#each game.reviews}}
   {{> game-reviews}}
   {{/each}}
-</main>

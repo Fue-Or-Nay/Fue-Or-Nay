@@ -18,6 +18,13 @@ Review.init(
                 isNumeric: true,
             },
         },
+        review_title: {
+            type: DataTypes.STRING,
+            allowNull: false, 
+            validate: {
+                len: [6, 20],
+            },
+        },
         description: {
             type: DataTypes.STRING,
             allowNull: false,
