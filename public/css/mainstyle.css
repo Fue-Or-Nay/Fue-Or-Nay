@@ -4,7 +4,9 @@ body{
 
 }
 
-
+nav{
+    background-color: #270B64;
+}
 /* CSS for login */
 
 .firstTime{
