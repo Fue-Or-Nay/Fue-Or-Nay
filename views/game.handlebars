@@ -1,13 +1,13 @@
 <main>
     <!-- Game Card -->
-  <h1>Super Mario 64</h1>
+  <h1>{{game.title}}</h1>
   <div class="row">
     <div class="col s12 m6">
       <div class="card">
         <div class="card-image">
           <img src="/Images/supermario64.jpg">
-          <span class="card-title">Nintendo 64</span>
-          <span class="card-content">Released: June 23rd, 1996</span>
+          <span class="card-title">Available On: {{#each game.consoles}} [{{this.name}}] {{/each}}</span>
+          <span class="card-content">Release Date: {{game.release_date}}</span>
           <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1"><i
               class="material-icons">thumbs_up_down</i></a>
         </div>
@@ -66,50 +66,7 @@
     <h3>User Reviews</h3>
     <a class="row" href="#">See all 2 reviews<i class="material-icons">chevron_right</i></a>
   </div>
-  <div class="row">
-    <div class="col s12 m6">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">This Game is the Bob-omb</span>
-          <p>This game is my childhood. Anyone who says they don't like this game is either drunk, confused, or Satan.
-          </p>
-        </div>
-        <div>
-          <i class="material-icons">whatshot</i>
-          <i class="material-icons">whatshot</i>
-          <i class="material-icons">whatshot</i>
-          <i class="material-icons">whatshot</i>
-          <i class="material-icons">whatshot</i>
-        </div>
-        <div class="card-action">
-          <a href="#">ScottyG393</a><p>Sept. 18, 2021</p>
-        </div>
-        <div class="card-action"><p>Was this review helpful?</p>
-          <button><i class="material-icons tiny">thumb_up</i></button>
-          <button><i class="material-icons tiny">thumb_down</i></button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s12 m6">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Thwomp Thwomp</span>
-          <p>This game truly sucks. The graphics are dated and kids games are boring. 
-          </p>
-        </div>
-        <div>
-          <i class="material-icons">whatshot</i>
-        </div>
-        <div class="card-action">
-          <a href="#">dillhole69</a><p>Sept. 18, 2021</p>
-        </div>
-        <div class="card-action"><p>Was this review helpful?</p>
-          <button><i class="material-icons tiny">thumb_up</i></button>
-          <button><i class="material-icons tiny">thumb_down</i></button>
-        </div>
-      </div>
-    </div>
-  </div>  
+  {{#each game.reviews}}
+  {{> game-reviews}}
+  {{/each}}
 </main>

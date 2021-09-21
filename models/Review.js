@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes, Sequelize } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Review extends Model {}
@@ -34,6 +34,10 @@ Review.init(
             type: DataTypes.INTEGER,
             allowNull: true,
             defaultValue: 0,
+        },
+        creation_date: {
+            type: DataTypes.DATEONLY,
+            defaultValue: Sequelize.NOW,
         },
         game_id: {
             type: DataTypes.INTEGER,
