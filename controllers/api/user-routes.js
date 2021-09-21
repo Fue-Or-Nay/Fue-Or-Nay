@@ -38,7 +38,7 @@ router.post('/', (req, res) => {
     User.create(req.body)
         .then((user) => {
 
-            if (req.body.gameIds.length) {
+            if (req.body.gameIds) {
                 const userGameArray = req.body.gameIds.map((game_id) => {
                     return {
                         user_id: user.id,
