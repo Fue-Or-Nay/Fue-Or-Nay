@@ -57,17 +57,14 @@ User.init(
         },
         reputation_level: {
             type: DataTypes.STRING,
-            allowNull: false,
             defaultValue: 'Cellar Dweller'
         },
         review_count: {
             type: DataTypes.INTEGER,
-            allowNull: false,
             defaultValue: 0,
         },
         feedback_count: {
             type: DataTypes.INTEGER,
-            allowNull: false,
             defaultValue: 0,
         },
     },
