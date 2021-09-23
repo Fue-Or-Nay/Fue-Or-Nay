@@ -449,10 +449,35 @@ font-family: 'Orbitron', sans-serif;
   position: relative;
   left: 25px;
 }
+.modal-input-field {
+  position: relative;
+  left: 25px;
+}
 .input-text {
   font-family: 'Orbitron', sans-serif;
   color:#F8F8F8ff;
   letter-spacing: .05em;
+}
+.modal-submit {
+  border-radius: 0 0 2px 2px;
+    padding: 4px 6px;
+    height: 56px;
+    width: 100%;
+    text-align: right;
+  background-color:#432a44;
+}
+.submit-review {
+  font-family: 'Iceland', 'cursive';
+  font-size: 1.5em;
+  color: #F8F8F8ff;
+  text-shadow:#E252B9 .5px 1px;
+}
+.flame {
+  color: rgb(255, 8, 132);
+}
+.flame-rate {
+  position: relative;
+  left: 25px;
 }
 
 /* CSS for the avatar page */
