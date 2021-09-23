@@ -6,9 +6,10 @@ body{
 /* CSS for Navbar */
 nav{
     background-color: #270B64;
+    height: 100px;
 }
 .nav-style {
-  font-family: 'Iceland', cursive;
+  font-family: 'Iceland', 'cursive';
   font-size: 2em;
   text-decoration: underline;
     color:#A8D3E7;
@@ -21,11 +22,38 @@ nav{
   text-decoration: underline;
     color:#A8D3E7;
     text-shadow: #E252B9 .5px 1px;
+    text-align: center;
+    margin: auto;
+}
+/* CSS for Footer */
+footer{
+  margin-top: 4em;
+}
+.footer-color {
+  background-color: #270B64;
+}
+.footer-heading {
+  font-family: 'Orbitron', sans-serif;
+  font-size:x-large;
+    color:#A8D3E7;
+    text-shadow: #E252B9 .5px 1px;
+}
+
+.footer-body {
+  font-family: 'Iceland', 'cursive';
+  font-size: 2em;
+  text-decoration: underline;
+    color:#A8D3E7;
+    text-shadow: #E252B9 .5px 1px;
+}
+.footer-logo {
+  height: 100px;
+  width: auto;
 }
 /* CSS for Home */
 .fuego-today {
   text-align: center;
-  padding: 2em;
+  padding: 6em;
 }
 .fuego-text {
   font-family: 'Orbitron', sans-serif;
@@ -48,8 +76,62 @@ nav{
     color:#F8F8F8ff;
     text-shadow: #31749Eff 2px 3px;
     text-align: center;
+    padding-top: 3em;
 }
-
+.center-carousel {
+  width: 100%;
+  margin: 75px auto;
+}
+.console-card {
+  margin: auto;
+  position: relative;
+  
+}
+.console-background {
+  background-color: none;
+  background-color: #0B142E;
+}
+.console-heading {
+color:#F8F8F8ff;
+font-family: 'Orbitron', sans-serif;
+}
+.console-body {
+  color: #FE97EB;
+  text-decoration: none;
+  font-family: 'Iceland', 'cursive';
+  font-size: 2em;
+}
+.fuegoats {
+  font-family: 'Orbitron', sans-serif;
+  font-size:xx-large;
+    color:#FE97EB;
+    text-shadow: #E252B9 2px 3px;
+    text-align: center;
+    padding-top: 3em;
+}
+.fuegones {
+  font-family: 'Orbitron', sans-serif;
+  font-size:xx-large;
+    color:#30c2ee;
+    text-shadow: rgb(65, 67, 202) 2px 3px;
+    text-align: center;
+    padding-top: 3em;
+}
+.game-list {
+  border: none;
+  margin: auto;
+  width: 50%;
+  text-decoration: underline;
+  font-family: 'Iceland', 'cursive';
+  font-size: 2em;
+  text-shadow: #E252B9 .5px 1px;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+.game-listed {
+  background-color: #F8F8F8ff;
+}
 /* CSS for login */
 
 .firstTime{
@@ -237,13 +319,9 @@ nav{
 }
 
 .logo {
-      height: 60px;
+      height: 90px;
       border: none;
 }
-@media screen and (max-width: 600px) {
-  .logo {
-    height: 55px;
-  }
 
 /* CSS for game page */
 
@@ -267,11 +345,28 @@ nav{
 
 .gameBox{
   width: 40%;
-  height:50%;
+  height: 50%;
   margin: auto;
   text-align: center;
 }
-
+.game-card {
+  width: 450px;
+}
+.card-heading {
+  color:#F8F8F8ff;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: #E252B9 .5px 1px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5em;
+}
+.release-date {
+  color:#30c2ee;
+  text-align: center;
+  text-shadow: #270B64 .5px 1px;
+  font-family: 'Iceland', 'cursive';
+  font-size: 1em;
+}
 .uRev{
   text-align: center;
   text-shadow: aqua 2px 3px;
@@ -326,4 +421,31 @@ nav{
   margin: auto;
   color: hotpink;
   margin: 50px;
+}
+.modal-colors {
+  background-color: #270B64;
+  color: #F8F8F8ff;
+}
+.modal-heading {
+  font-size: 2.75em;
+  text-shadow: #E252B9 1px 2px;
+  font-family: 'Orbitron', sans-serif;
+}
+.modal-subheading {
+  font-size: 1.5em;
+  text-shadow: #30c2ee .5px 1px;
+  font-family: 'Iceland', 'cursive';
+}
+.modal-question {
+  color:#F8F8F8ff;
+  font-size: 2em;
+  text-shadow: #30c2ee .5px 1px;
+  font-family: 'Orbitron', sans-serif;
+  position: relative;
+  left: 25px;
+}
+.input-text {
+  font-family: 'Orbitron', sans-serif;
+  color:#F8F8F8ff;
+  letter-spacing: .05em;
 }

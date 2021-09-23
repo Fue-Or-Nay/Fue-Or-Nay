@@ -2606,7 +2606,6 @@ ul:not(.browser-default) > li {
 }
 
 a {
-  color: #039be5;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -3087,7 +3086,6 @@ td, th {
 }
 
 .collection .collection-item {
-  background-color: #fff;
   line-height: 1.5rem;
   padding: 10px 20px;
   margin: 0;
@@ -3150,7 +3148,6 @@ td, th {
   display: block;
   -webkit-transition: .25s;
   transition: .25s;
-  color: #26a69a;
 }
 
 .collection a.collection-item:not(.active):hover {
@@ -4928,7 +4925,6 @@ small {
 .card .card-reveal {
   padding: 24px;
   position: absolute;
-  background-color: #fff;
   width: 100%;
   overflow-y: auto;
   left: 0;
@@ -8359,7 +8355,7 @@ input[type=range]::-ms-thumb {
 }
 
 .carousel {
-  overflow: hidden;
+  margin:auto;
   position: relative;
   width: 100%;
   height: 400px;
@@ -8390,7 +8386,6 @@ input[type=range]::-ms-thumb {
 
 .carousel.carousel-slider .carousel-item {
   width: 100%;
-  height: 100%;
   min-height: 400px;
   position: absolute;
   top: 0;
@@ -8409,8 +8404,8 @@ input[type=range]::-ms-thumb {
 
 .carousel .carousel-item {
   visibility: hidden;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -8418,6 +8413,7 @@ input[type=range]::-ms-thumb {
 
 .carousel .carousel-item > img {
   width: 100%;
+  height: 100%;
 }
 
 .carousel .indicators {
