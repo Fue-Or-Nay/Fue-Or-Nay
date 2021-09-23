@@ -7,21 +7,27 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    const gameData = await Game.findAll({
+    const consoleData = await Console.findAll({
       include: {
-        model: Console,
+        model: Game,
         attributes: [
           'id',
-          'name'
+          'title',
+          'release_date',
+          'rating_scale',
+          'rating_avg',
+          'genre',
+          'esrb_rating',
+          'description'
         ],
       }
     });
 
-    const game = gameData.map((data) =>
+    const console = consoleData.map((data) =>
       data.get({ plain: true })
     );
 
-    res.render('home', { game, loggedIn: req.session.loggedIn});
+    res.render('home', { console, loggedIn: req.session.loggedIn});
   } 
   catch (err) {
     console.log(err);
