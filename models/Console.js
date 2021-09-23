@@ -15,7 +15,16 @@ Console.init(
             type: DataTypes.STRING,
             allowNull: false,
             unique: true,
-        }
+        },
+        // slug: {
+        //     type: DataTypes.STRING,
+        //     allowNull: false,
+        //     unique: true,
+        // },
+        thumbnail: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
     },
     {
         sequelize,

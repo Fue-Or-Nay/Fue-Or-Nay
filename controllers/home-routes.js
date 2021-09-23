@@ -7,28 +7,58 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    const consoleData = await Console.findAll({});
+    const gameData = await Game.findAll({
+      include: {
+        model: Console,
+        attributes: [
+          'id',
+          'name'
+        ],
+      }
+    });
 
-    const console = consoleData.map((data) =>
+    const game = gameData.map((data) =>
       data.get({ plain: true })
     );
 
-    res.render('home', {
-      console,
-    });
-  } catch (err) {
+    res.render('home', { game, loggedIn: req.session.loggedIn});
+  } 
+  catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
 
-router.get('/console', (req, res) => {
-  res.render('console')
+router.get('/console', async (req, res) => {
+  try {
+    const consoleData = await Console.findAll({
+      include: {
+        model: Game,
+        attributes: [
+          'id',
+          'title',
+          'release_date',
+          'rating_scale',
+          'rating_avg',
+          'genre',
+          'esrb_rating',
+          'description'
+        ],
+      }
+    });
+
+    const console = consoleData.map((data) =>
+      data.get({ plain: true })
+    );
+
+    res.render('console', { console, loggedIn: req.session.loggedIn});
+  } 
+  catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
 });
 
-router.get('/game', (req, res) => {
-  res.render('game')
-});
 
 router.get('/game/:id', async (req, res) => {
 
@@ -40,7 +70,7 @@ router.get('/game/:id', async (req, res) => {
 
     const game = gameData.get({ plain: true });
 
-    res.render('game', { game });
+    res.render('game', { game, loggedIn: req.session.loggedIn });
   }
   catch (err) {
     res.status(500).json(err);
@@ -49,14 +79,42 @@ router.get('/game/:id', async (req, res) => {
 
 
 
-router.get('/profile', withAuth, async (req, res) => {
+router.get('/profile', async (req, res) => {
   if (req.session.loggedIn) {
     try {
-      const userData = await User.findByPk(req.session.user_id);
+      const userData = await User.findByPk(req.session.user_id, {
+        include: [
+          {
+            model: Review,
+            attributes: [
+              'id',
+              'review_title',
+              'description',
+              'num_rating',
+              'helpful',
+              'not_helpful',
+              'creation_date',
+            ],
+          },
+          {
+            model: Game,
+            attributes: [
+              'id',
+              'title',
+              'release_date',
+              'rating_scale',
+              'rating_avg',
+              'genre',
+              'esrb_rating',
+              'description'
+            ],
+          },
+        ],
+      });
 
       const user = userData.get({ plain: true });
 
-      res.render('profile', { user });
+      res.render('profile', { user, loggedIn: req.session.loggedIn });
     } catch (err) {
       console.log(err);
       res.status(500).json(err);
@@ -74,8 +132,7 @@ router.get('/login', (req, res) => {
     return;
   }
 
-  res.render('login');
+  res.render('login', { loggedIn: req.session.loggedIn });
 });
-
 
 module.exports = router;

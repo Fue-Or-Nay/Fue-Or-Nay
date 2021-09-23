@@ -3,7 +3,8 @@
         <div class="card black">
             <div class="card-content">
                 <span class="gHead card-title">{{review_title}}</span>
-                <p>{{description}}
+                <p>
+                    {{description}}
                 </p>
             </div>
             <div class="revFS">
@@ -17,8 +18,8 @@
             </div>
             <div class="card-action">
                 <p>Was this review helpful?</p>
-                <button><i class="material-icons tiny">thumb_up</i></button>
-                <button><i class="material-icons tiny">thumb_down</i></button>
+                <button><i class="material-icons tiny" id="helpful">thumb_up</i>{{helpful}}</button>
+                <button><i class="material-icons tiny" id="not_helpful">thumb_down</i>{{not_helpful}}</button>
             </div>
         </div>
     </div>

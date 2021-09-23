@@ -244,6 +244,7 @@ nav{
   .logo {
     height: 55px;
   }
+}
 
 /* CSS for game page */
 
@@ -327,3 +328,30 @@ nav{
   color: hotpink;
   margin: 50px;
 }
+
+/* CSS for the avatar page */
+
+.avatar{
+  background-color: black;
+  color: aqua;
+  border: hotpink solid 2px;
+  margin: 30px;
+  height: 300px;
+  display: flex;
+}
+
+.avapic{
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.avasel{
+  text-align: center;
+  text-shadow: aqua 2px 3px;
+  color: #E252B9;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: underline;
+}
+
+

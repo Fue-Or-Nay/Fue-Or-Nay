@@ -5,7 +5,7 @@
     <div class="gameBox" class="center-align">
       <div class="card center-align">
         <div class="card-image center-align black">
-          <img src="./public/Images/supermario64.jpg">
+          <img src="{{game.thumbnail}}">
           <span class="card-title black-text">Available On: {{#each game.consoles}} [{{this.name}}] {{/each}}</span>
           <span class="card-content black cyan-text accent-1">Released: {{game.release_date}}</span>
           <a class="thumb btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1"><i
@@ -25,24 +25,34 @@
   <div id="modal1" class="modal">
     <div class="modal-content">
       <h4>Fue or Nay?</h4>
-      <p>Write a review for this game!</p>
     </div>
-    <form action="#">
-      <p>
+    <h5>Review Title</h5>
+    <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea" data-length="20"></textarea>
+              <label for="textarea1">Write a title for your review here!</label>
+            </div>
+          </div>
+        </form>
+      </div>
       <h5>Which console?</h5>
-      <div class="input-field col s12">
+      <div class="input-field col s12" id="consoleSelect">
         <select multiple>
-          <option value="1">Nintendo 64</option>
+          {{#each game.consoles}}
+          <option value="{{this.id}}">{{this.name}}</option>
+          {{/each}}
         </select>
       </div>
       <!--Flame rating-->
       <h5>How fuego was this game tho?</h5>
       <ul class="rate-area row">
-        <a class="waves-effect waves-teal btn-flat"><i class="medium material-icons">whatshot</i></a>
-        <a class="waves-effect waves-teal btn-flat"><i class="medium material-icons">whatshot</i></a>
-        <a class="waves-effect waves-teal btn-flat"><i class="medium material-icons">whatshot</i></a>
-        <a class="waves-effect waves-teal btn-flat"><i class="medium material-icons">whatshot</i></a>
-        <a class="waves-effect waves-teal btn-flat"><i class="medium material-icons">whatshot</i></a>
+        <a class="waves-effect waves-teal btn-flat" id="fue1"><i class="medium material-icons">whatshot</i></a>
+        <a class="waves-effect waves-teal btn-flat" id="fue2"><i class="medium material-icons">whatshot</i></a>
+        <a class="waves-effect waves-teal btn-flat" id="fue3"><i class="medium material-icons">whatshot</i></a>
+        <a class="waves-effect waves-teal btn-flat" id="fue4"><i class="medium material-icons">whatshot</i></a>
+        <a class="waves-effect waves-teal btn-flat" id="fue5"><i class="medium material-icons">whatshot</i></a>
       </ul>
       <!--Write review-->
       <h5>Tell us why!</h5>
@@ -58,7 +68,7 @@
       </div>
       </p>
       <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Submit Review</a>
+        <button class="modal-close waves-effect waves-green btn-flat" id="submitReview">Submit Review</button>
       </div>
   </div>
 
@@ -68,5 +78,5 @@
   </div>
 
   {{#each game.reviews}}
-  {{> game-reviews}}
+  {{> review-card}}
   {{/each}}

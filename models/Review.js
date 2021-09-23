@@ -22,7 +22,7 @@ Review.init(
             type: DataTypes.STRING,
             allowNull: false, 
             validate: {
-                len: [6, 20],
+                len: [3, 20],
             },
         },
         description: {

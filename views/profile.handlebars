@@ -6,8 +6,10 @@
 
         <div class="profInfo">
             <div class="info">
-                <p class="revTitle">Your reviewer title</p>
-                <p>Some shit about you</p>
+                <p class="revTitle">'{{user.reputation_level}}'</p>
+                <p>{{user.bio}}</p>
+                <p>Total Reviews: {{user.review_count}}</p>
+                <p>Total Feedback Given: {{user.feedback_count}}</p>
             </div>
             <h4 class="fueScore">Your Fue Score:</h4>
             <div class="badges">
@@ -25,11 +27,9 @@
     <h3 class="rtdGames">Your Rated Games</h3>
     <div class="selHold">
         <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="./public/Images/71ZlDsoz7BL._SL1064_.jpg"></a>
-            <a class="carousel-item" href="#two!"><img src="./public/Images/unnamed.png"></a>
-            <a class="carousel-item" href="#three!"><img src="./public/Images/220px-Shadow_of_Mordor_cover_art.jpeg"></a>
-            <a class="carousel-item" href="#four!"><img src="./public/Images/220px-Final_Fantasy_8_ntsc-front.jpeg"></a>
-            <a class="carousel-item" href="#five!"><img src="./public/Images/cover-r4x3w1000-5b72dba20ebf0-world-of-warcraft-battle-for-azeroth-key-art-2-orc-v-human.jpeg"></a>
+           {{#each user.games}}
+           {{> user-games}}
+           {{/each}}
         </div>
     </div>
 
