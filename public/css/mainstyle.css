@@ -480,4 +480,40 @@ font-family: 'Orbitron', sans-serif;
   text-decoration: underline;
 }
 
+.gHead{
+  color: hotpink;
+}
+
+.unRev{
+  font-family: 'Iceland', cursive;
+  font-size: 1.8rem;
+  color: aqua;
+}
+
+.btnBox{
+  display: flex;
+}
+
+.revBtn{
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 90px;
+}
+
+/* CSS All Reviews */
+/* 
+.pg{
+  display: flex;
+  margin: auto;
+  color: hotpink;
+} */
+
+.pag{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  color: hotpink;
+  margin: 50px;
+}
 
