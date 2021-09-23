@@ -244,6 +244,7 @@ nav{
   .logo {
     height: 55px;
   }
+}
 
 /* CSS for game page */
 
@@ -285,5 +286,44 @@ nav{
 }
 
 .gRev{
-  margin: 50px;}
+  margin: 50px;
+  border: aqua 2px solid;
+  background: black;
+  color: cyan;
+}
+
+.gHead{
+  color: hotpink;
+}
+
+.unRev{
+  font-family: 'Iceland', cursive;
+  font-size: 1.8rem;
+  color: aqua;
+}
+
+.btnBox{
+  display: flex;
+}
+
+.revBtn{
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 90px;
+}
+
+/* CSS All Reviews */
+
+.pg{
+  display: flex;
+  margin: auto;
+  color: hotpink;
+}
+
+.pag{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  color: hotpink; 
 }
