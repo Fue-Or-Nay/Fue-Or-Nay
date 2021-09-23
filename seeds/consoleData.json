@@ -1,17 +1,22 @@
 [
     {
-        "name": "Playstation 5"
+        "name": "Playstation 5",
+        "slug": "playstation-5"
     },
     {
-        "name": "Xbox Series S/X"
+        "name": "Xbox Series S/X",
+        "slug": "xbox-series-x-s"
     },
     {
-        "name": "Playstation 4"
+        "name": "Playstation 4",
+        "slug": "playstation-4"
     },
     {
-        "name": "Xbox One"
+        "name": "Xbox One",
+        "slug": "xbox-one"
     },
     {
-        "name": "Nintendo Switch"
+        "name": "Nintendo Switch",
+        "slug": "nintendo-switch"
     }
 ]

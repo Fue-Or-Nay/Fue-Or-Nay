@@ -117,7 +117,9 @@ router.post('/login', async (req, res) => {
         req.session.save(() => {
             req.session.loggedIn = true;
             req.session.user_id = userInfoCheck.id;
-            res.status(200).json({  message: "Welcome!"})
+            req.session.email = userInfoCheck.email;
+            req.session.username = userInfoCheck.username;
+            res.status(200).json({ message: "Welcome!"})
         })
 
     }

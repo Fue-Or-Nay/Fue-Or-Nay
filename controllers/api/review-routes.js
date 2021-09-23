@@ -35,6 +35,7 @@ router.post('/', withAuth, (req, res) => {
         num_rating: req.body.num_rating,
         description: req.body.description,
         game_id: req.body.game_id,
+        review_title: req.body.review_title,
         user_id: req.session.user_id
     })
     .then((newReview) => res.status(200).json(newReview))

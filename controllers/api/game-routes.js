@@ -37,7 +37,7 @@ router.post('/', (req, res) => {
     Game.create(req.body)
     .then((game) => {
 
-        if (req.body.consoleIds.length) {
+        if (req.body.consoleIds) {
             const userConsoleArray = req.body.consoleIds.map((console_id) => {
                 return {
                     console_id: console_id,
@@ -49,9 +49,9 @@ router.post('/', (req, res) => {
         res.status(200).json(game);
     })
     .then((newGame) => res.status(200).json(newGame))
-    .catch((err) => {
-        res.status(400).json(err);
-    });
+    // .catch((err) => {
+    //     res.status(400).json(err);
+    // });
 });
 
 router.put('/:id', (req, res) => {
