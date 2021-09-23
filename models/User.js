@@ -67,6 +67,13 @@ User.init(
             type: DataTypes.INTEGER,
             defaultValue: 0,
         },
+        bio: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            validate: {
+                len: 200,
+            },
+        },
     },
     {
         hooks: {

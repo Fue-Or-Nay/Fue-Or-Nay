@@ -15,6 +15,11 @@ Game.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        // slug: {
+        //     type: DataTypes.STRING,
+        //     allowNull: false,
+        //     unique: true,
+        // },
         release_date: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -45,6 +50,9 @@ Game.init(
         description: {
             type: DataTypes.STRING,
             allowNull: false,
+        },
+        thumbnail: {
+            type: DataTypes.STRING,
         },
     },
     {
