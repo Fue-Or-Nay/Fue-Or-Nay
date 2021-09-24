@@ -1,28 +1,53 @@
-<h2 class="profUN">{{user.username}}</h2>
-    <main class="prof">
-        <div class="profPic">
-            <img class="circle responsive-img" src="./public/Images/ntnqruv8nhq1avryljcd.jpeg">
-        </div>
+<h1 class="hide-on-small-only Un">{{name}}</h1>
+    <h5 class="hide-on-large-only Un">{{name}}</h5>
 
-        <div class="profInfo">
-            <div class="info">
-                <p class="revTitle">'{{user.reputation_level}}'</p>
-                <p>{{user.bio}}</p>
-                <p>Total Reviews: {{user.review_count}}</p>
-                <p>Total Feedback Given: {{user.feedback_count}}</p>
+    <div class="row gpCard profcard">
+        <div class="col s12 m6 l6 push-l3 hide-on-large-only">
+            <div class="card black">
+                <div class="card-image">
+                    <img src="public/Images/avatar-placeholder.png">
+                </div>
+                <div class="card-content center-align black">
+                    <p class="center-align cyan-text accent-1">
+                        Account creation date:
+                    </p>
+                    <p class="center-align cyan-text accent-1">
+                        time since creation date:
+                    </p>
+                    <p class="center-align cyan-text accent-1">
+                        review count:
+                    </p>
+                    <p class="center-align cyan-text accent-1">
+                        feedback count:
+                    </p>
+                </div>
             </div>
-            <h4 class="fueScore">Your Fue Score:</h4>
-            <div class="badges">
-                <i class="medium material-icons pink-text lighten-5">whatshot</i>
-                <i class="medium material-icons pink-text lighten-2">whatshot</i>
-                <i class="medium material-icons pink-text lighten-2">whatshot</i>
-                <i class="medium material-icons pink-text lighten-2">whatshot</i>
-                <i class="medium material-icons pink-text lighten-2">whatshot</i>
+        </div>
+    </div>
+
+        <div class="gameBox game-card col s12 m6 l6 push-l3 hide-on-small-only">
+        <div class="card center-align">
+            <div class="card-image center-align black">
+                <img src="public/Images/avatar-placeholder.png">
+            </div>
+            <div class="card-content center-align black">
+                <p class="center-align cyan-text accent-1">
+                    Account creation date:
+                </p>
+                <p class="center-align cyan-text accent-1">
+                    time since creation date:
+                </p>
+                <p class="center-align cyan-text accent-1">
+                    review count:
+                </p>
+                <p class="center-align cyan-text accent-1">
+                    feedback count:
+                </p>
             </div>
         </div>
+    </div>
 
 
-    </main>
     <br>
     <h3 class="rtdGames">Your Rated Games</h3>
     <div class="selHold">
@@ -33,29 +58,28 @@
         </div>
     </div>
 
-    <h3 class="rtdGames">Your Top Reviews:</h3>
-    <div class="yoRev">
-        <ul class="pagination">
-            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-            <li class="active blue"><a href="#!">1</a></li>
-            <li class="waves-effect"><a href="#!">2</a></li>
-            <li class="waves-effect"><a href="#!">3</a></li>
-            <li class="waves-effect"><a href="#!">4</a></li>
-            <li class="waves-effect"><a href="#!">5</a></li>
-            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-        </ul>
-        <div class="rev">
-            <h5 class="revGme">"Reviewed Game"</h5>
-            <p class="revcontent">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+     <h3 class="gameTitle">Your Most Recent Review:</h3>
+    <div class="section">
+        <div class="gRev center-align">
+            <div class="card black">
+                <div class="card-content">
+                    <span class="gHead card-title">It tingled my Forehead</span>
+                    <p>No really my forehead fell off when I played this game and I had to go and buy a new prostethic.
+                    </p>
+                </div>
+                <div class="revFS">
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                </div>
+                <div class="card-action">
+                    <a class="unRev pink-text lighten-5" href="#">{{user.username}}</a>
+                    <p>Sept. 11, 2021</p>
+                    <p>Review feedback score?:</p>
+                </div>
+            </div>
         </div>
     </div>
-
 
 
 
