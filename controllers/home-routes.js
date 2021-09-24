@@ -3,33 +3,11 @@ const consoleGame = require('../models/consoleGame');
 const userGame = require('../models/userGame');
 const { User, Game, Console, Review } = require('../models');
 const withAuth = require('../utils/auth');
+const Sequelize = require('sequelize');
+const Op = Sequelize.Op;
 
 
 router.get('/', async (req, res) => {
-  try {
-    const gameData = await Game.findAll({
-      include: {
-        model: Console,
-        attributes: [
-          'id',
-          'name'
-        ],
-      }
-    });
-
-    const game = gameData.map((data) =>
-      data.get({ plain: true })
-    );
-
-    res.render('home', { game, loggedIn: req.session.loggedIn});
-  } 
-  catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
-
-router.get('/console', async (req, res) => {
   try {
     const consoleData = await Console.findAll({
       include: {
@@ -51,7 +29,7 @@ router.get('/console', async (req, res) => {
       data.get({ plain: true })
     );
 
-    res.render('console', { console, loggedIn: req.session.loggedIn});
+    res.render('home', { console, loggedIn: req.session.loggedIn});
   } 
   catch (err) {
     console.log(err);
@@ -59,6 +37,27 @@ router.get('/console', async (req, res) => {
   }
 });
 
+router.get('/search/:search', async (req, res) => {
+    try {
+      const searchResults = await Game.findAll({
+        where: {
+          title: {
+            [Op.like]: `%${req.params.search}%`,
+          },
+        },
+      });
+
+      const results = searchResults.map((data) => 
+        data.get({ plain: true})
+      );
+
+      res.render('searchResults', { results, loggedIn: req.session.loggedIn, searchParams: req.params.search });
+      // res.status(200).json(results);
+    }
+    catch (err) {
+      res.status(500).json(err);
+    }
+})
 
 router.get('/game/:id', async (req, res) => {
 
@@ -71,6 +70,7 @@ router.get('/game/:id', async (req, res) => {
     const game = gameData.get({ plain: true });
 
     res.render('game', { game, loggedIn: req.session.loggedIn });
+ 
   }
   catch (err) {
     res.status(500).json(err);
@@ -115,7 +115,8 @@ router.get('/profile', async (req, res) => {
       const user = userData.get({ plain: true });
 
       res.render('profile', { user, loggedIn: req.session.loggedIn });
-    } catch (err) {
+    } 
+    catch (err) {
       console.log(err);
       res.status(500).json(err);
     }
