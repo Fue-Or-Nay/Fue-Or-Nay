@@ -1,26 +1,67 @@
-<h1 class="gameTitle">{{game.title}}</h1>
-  <br>
-  
-  <div class="row center-align" class="game">
-    <div class="gameBox" class="center-align">
-      <div class="card center-align">
-        <div class="card-image center-align black">
-          <img src="{{game.thumbnail}}">
-          <span class="card-title black-text">Available On: {{#each game.consoles}} [{{this.name}}] {{/each}}</span>
-          <span class="card-content black cyan-text accent-1">Released: {{game.release_date}}</span>
-          <a class="thumb btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1"><i
-              class="material-icons">thumbs_up_down</i></a>
+<div class="row gpCard">
+    <div class="col s12 m6 l6 push-l3 hide-on-large-only">
+      <div class="card">
+        <div class="card-image">
+          <img src="/Images/220px-WoW_Box_Art1.jpeg">
+          <span class="card-title black pink-text lighten-5">{{game.title}}</span>
         </div>
-        <div class="card-content black">
-          <i class="large material-icons pink-text lighten-5">whatshot</i>
-          <i class="large material-icons pink-text lighten-5">whatshot</i>
-          <i class="large material-icons pink-text lighten-5">whatshot</i>
-          <i class="large material-icons pink-text lighten-5">whatshot</i>
-          <i class="large material-icons pink-text lighten-5">whatshot</i>
+        <div class="card-content black cyan-text accent-1 center-align">
+          <p>{{game.description}}</p>
+          <div class="card-content black center-align">
+            <i class="small material-icons pink-text lighten-5">whatshot</i>
+            <i class="small material-icons pink-text lighten-5">whatshot</i>
+            <i class="small material-icons pink-text lighten-5">whatshot</i>
+            <i class="small material-icons pink-text lighten-5">whatshot</i>
+            <i class="small material-icons pink-text lighten-5">whatshot</i>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="gameBox game-card col s12 m6 l6 push-l3 hide-on-small-only">
+    <div class="card center-align">
+      <div class="card-image center-align black">
+        <img src="/Images/220px-WoW_Box_Art1.jpeg">
+        <span><a class="card-heading" href='game.html'>{{game.title}}</a></span><br>
+      </div>
+      <div class="card-content black">
+        <i class="small material-icons pink-text lighten-5">whatshot</i>
+        <i class="small material-icons pink-text lighten-5">whatshot</i>
+        <i class="small material-icons pink-text lighten-5">whatshot</i>
+        <i class="small material-icons pink-text lighten-5">whatshot</i>
+        <i class="small material-icons pink-text lighten-5">whatshot</i>
+      </div>
+    </div>
+  </div>
+
+
+<h3 class="mrr">Most Recent Review:</h3>
+  <div class="section">
+    <div class="gRev center-align">
+        <div class="card black">
+            <div class="card-content">
+                <span class="gHead card-title">Create helper to return most recent review</span>
+                <p>Create helper to return most recent review description
+                </p>
+            </div>
+            <div class="revFS">
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+            </div>
+            <div class="card-action">
+                <a class="unRev pink-text lighten-5" href="#">Create helper to return most recent review user</a>
+                <p>create helper to return most recent review creation date</p>
+            </div>
+            <div class="card-action">
+                <p>Was this review helpful?</p>
+                <button><i class="material-icons tiny">thumb_up</i></button>
+                <button><i class="material-icons tiny">thumb_down</i></button>
+            </div>
+        </div>
+    </div>
+</div>
 
   <div id="modal1" class="modal">
     <div class="modal-content">
@@ -71,12 +112,3 @@
         <button class="modal-close waves-effect waves-green btn-flat" id="submitReview">Submit Review</button>
       </div>
   </div>
-
-  <div>
-    <h3 class="uRev">User Reviews</h3>
-    <a class="row" href="#">See All Reviews<i class="material-icons">chevron_right</i></a>
-  </div>
-
-  {{#each game.reviews}}
-  {{> review-card}}
-  {{/each}}

@@ -4,33 +4,19 @@
   <h3 class="fuego-pink"> Fuego</h3>
   <h3 class="fuego-text"> Today, Bro?</h3>
 </div>
-{{!-- <div class="carousel carousel-slider center-carousel center">
-  <div class="carousel-item center row center-align" class="game">
-    <div class="gameBox center-align game-card">
-      <div class="card center-align">
-        <div class="card-image center-align black">
-          <img src="/Images/supermario64.jpg">
-          <span class="card-heading"><a href='game.html'>Super Mario 64</a></span><br>
-        </div>
-        <div class="card-content black">
-          <i class="small material-icons pink-text lighten-5">whatshot</i>
-          <i class="small material-icons pink-text lighten-5">whatshot</i>
-          <i class="small material-icons pink-text lighten-5">whatshot</i>
-          <i class="small material-icons pink-text lighten-5">whatshot</i>
-          <i class="small material-icons pink-text lighten-5">whatshot</i>
+<div class="member hide-on-small-only">
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="homepageSearch" type="text">
+          <label class="active" for="homepageSearch">Search the Fuegobase for your favorite game</label>
         </div>
       </div>
-    </div>
+      <button class="waves-effect waves-light btn" id="mainSearch" type="submit">Search</button>
+    </form>
   </div>
-  <a class="carousel-item center" href="#two!"><img src="/Images/hotgames/minecraft.jpg"></a>
-  <a class="carousel-item center" href="#three!"><img src="/Images/hotgames/animalcrossing.jpg"></a>
-  <a class="carousel-item center" href="#four!"><img src="/Images/hotgames/gtav.jpg"></a>
-  <a class="carousel-item center" href="#five!"><img src="/Images/hotgames/lol.jpg"></a>
-</div><br> --}}
-{{!-- Console selection --}}
-<h4 class="consoles">Consoles</h4>
-<div class="carousel center-carousel">
-{{#each console}}
-{{> console-card}}
-{{/each}}
 </div>
+</div>
+
+<script src="/js/searchFunction.js"></script>

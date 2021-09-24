@@ -1,3 +1,6 @@
 .DS_STORE
 node_modules
 .env
+dontpush.html
+dontpush2.html
+dontpush3.html
