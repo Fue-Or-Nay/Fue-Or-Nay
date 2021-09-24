@@ -53,6 +53,7 @@ Game.init(
         },
         thumbnail: {
             type: DataTypes.STRING,
+            allowNull: true,
         },
     },
     {
