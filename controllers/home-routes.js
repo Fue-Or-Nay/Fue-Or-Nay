@@ -16,7 +16,6 @@ router.get('/', async (req, res) => {
           'id',
           'title',
           'release_date',
-          'rating_scale',
           'rating_avg',
           'genre',
           'esrb_rating'
