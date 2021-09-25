@@ -4,69 +4,81 @@
         "slug": "grand-theft-auto-v",
         "release_date": "2013-09-17",
         "rating_scale": "FUE",
-        "rating_avg": "8.9",
+        "rating_avg": "5",
         "genre": "Action RPG",
         "esrb_rating": "M",
-        "description": "Test Description"
+
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png"
     },
     {
         "title": "The Witcher 3 Wild Hunt",
         "slug": "the-witcher-3-wild-hunt",
         "release_date": "2015-05-08",
+        "rating_avg": "5",
         "genre": "Action RPG",
         "esrb_rating": "M",
-        "description": "Test Description"
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Witcher_3_cover_art.jpg/220px-Witcher_3_cover_art.jpg"
     },
     {
         "title": "Portal 2",
         "release_date": "2011-04-18",
         "genre": "Puzzle Shooter",
+        "rating_avg": "3",
         "esrb_rating": "E 10+",
-        "description": "Test Description"
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/f/f9/Portal2cover.jpg"
     },
     {
         "title": "Tomb Raider (2013)",
         "release_date": "2013-03-05",
         "rating_scale": "NAY",
-        "rating_avg": "1.9",
+        "rating_avg": "1",
         "genre": "Action Adventure",
         "esrb_rating": "M",
-        "description": "Test Description"
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/TombRaider2013.jpg/220px-TombRaider2013.jpg"
     },
     {
         "title": "Left 4 Dead 2",
         "release_date": "2009-11-17",
         "rating_scale": "KINDA FUE",
-        "rating_avg": "6.7",
+        "rating_avg": "3",
         "genre": "Action Shooter",
         "esrb_rating": "M",
-        "description": "Test Description"
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Left4Dead2.jpg/220px-Left4Dead2.jpg"
     },
     {
         "title": "The Elder Scrolls V: Skyrim",
         "release_date": "2011-11-11",
         "rating_scale": "ON THE WAY TO FUE",
-        "rating_avg": "7.8",
+        "rating_avg": "2",
         "genre": "RPG",
         "esrb_rating": "M",
-        "description": "Test Description"
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/1/15/The_Elder_Scrolls_V_Skyrim_cover.png/220px-The_Elder_Scrolls_V_Skyrim_cover.png"
     },
     {
         "title": "Borderlands 2",
         "release_date": "2012-09-18",
         "rating_scale": "LOOKIN LIKE NAY",
-        "rating_avg": "3.3",
+        "rating_avg": "2",
         "genre": "FPS RPG",
         "esrb_rating": "M",
-        "description": "Test Description"
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Borderlands_2_cover_art.png/220px-Borderlands_2_cover_art.png"
     },
     {
         "title": "Counter Strike: Global Offensive",
         "release_date": "2012-08-01",
         "rating_scale": "ON THE WAY TO NAY",
-        "rating_avg": "4.3",
+        "rating_avg": "2",
         "genre": "FPS",
         "esrb_rating": "M",
-        "description": "Test Description"
+        "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1631908705"
+    },
+    {
+        "title": "",
+        "release_date": "",
+        "rating_scale": "",
+        "rating_avg": "",
+        "genre": "",
+        "esrb_rating": "",
+        "thumbnail": ""
     }
 ]

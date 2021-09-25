@@ -1,17 +1,37 @@
 <a href="/game/{{id}}">
-    <div class="col s12 m6 l3 allrev push-l1 hide-on-small-only">
+    <div class="col l3 hide-on-small-only">
         <div class="gameBox game-card">
-            <div class="card center-align">
-                <div class="card-image center-align black">
-                    <img src="/Images/supermario64.jpg">
-                    <span class="card-heading">{{name}}</span><br>
+            <div class="card center-align hoverable">
+                <div class="card-image center-align">
+                    <img class="gcImage" src="{{thumbnail}}">
                 </div>
+                <div class="card-title black pink-text lighten-5">{{title}}</div>
                 <div class="card-content black">
-                    <i class="small material-icons pink-text lighten-5">whatshot</i>
-                    <i class="small material-icons pink-text lighten-5">whatshot</i>
-                    <i class="small material-icons pink-text lighten-5">whatshot</i>
-                    <i class="small material-icons pink-text lighten-5">whatshot</i>
-                    <i class="small material-icons pink-text lighten-5">whatshot</i>
+                    {{#eq rating_avg "1"}}
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    {{/eq}}
+                    {{#eq rating_avg "2"}}
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    {{/eq}}
+                    {{#eq rating_avg "3"}}
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    {{/eq}}
+                    {{#eq rating_avg "4"}}
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    {{/eq}}
+                    {{#eq rating_avg "5"}}
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    {{/eq}}
                 </div>
             </div>
         </div>

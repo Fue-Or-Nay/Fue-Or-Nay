@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Game extends Model {}
+class Game extends Model { }
 
 Game.init(
     {
@@ -15,11 +15,6 @@ Game.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        // slug: {
-        //     type: DataTypes.STRING,
-        //     allowNull: false,
-        //     unique: true,
-        // },
         release_date: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -27,14 +22,10 @@ Game.init(
                 isDate: true,
             },
         },
-        rating_scale: {
-            type: DataTypes.STRING,
-            allowNull: true,    
-        },
         rating_avg: {
             type: DataTypes.STRING,
             allowNull: false,
-            defaultValue: "0.0",
+            defaultValue: "1",
             validate: {
                 isDecimal: true,
             }
@@ -44,10 +35,6 @@ Game.init(
             allowNull: false,
         },
         esrb_rating: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        description: {
             type: DataTypes.STRING,
             allowNull: false,
         },

@@ -16,11 +16,9 @@ router.get('/', async (req, res) => {
           'id',
           'title',
           'release_date',
-          'rating_scale',
           'rating_avg',
           'genre',
-          'esrb_rating',
-          'description'
+          'esrb_rating'
         ],
       }
     });
@@ -29,8 +27,8 @@ router.get('/', async (req, res) => {
       data.get({ plain: true })
     );
 
-    res.render('home', { console, loggedIn: req.session.loggedIn});
-  } 
+    res.render('home', { console, loggedIn: req.session.loggedIn });
+  }
   catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -38,25 +36,24 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/search/:search', async (req, res) => {
-    try {
-      const searchResults = await Game.findAll({
-        where: {
-          title: {
-            [Op.like]: `%${req.params.search}%`,
-          },
+  try {
+    const searchResults = await Game.findAll({
+      where: {
+        title: {
+          [Op.like]: `%${req.params.search}%`,
         },
-      });
+      },
+    });
 
-      const results = searchResults.map((data) => 
-        data.get({ plain: true})
-      );
+    const results = searchResults.map((data) =>
+      data.get({ plain: true })
+    );
 
-      res.render('searchResults', { results, loggedIn: req.session.loggedIn, searchParams: req.params.search });
-      // res.status(200).json(results);
-    }
-    catch (err) {
-      res.status(500).json(err);
-    }
+    res.render('searchResults', { results, loggedIn: req.session.loggedIn, searchParams: req.params.search });
+  }
+  catch (err) {
+    res.status(500).json(err);
+  }
 })
 
 router.get('/game/:id', async (req, res) => {
@@ -70,7 +67,7 @@ router.get('/game/:id', async (req, res) => {
     const game = gameData.get({ plain: true });
 
     res.render('game', { game, loggedIn: req.session.loggedIn });
- 
+
   }
   catch (err) {
     res.status(500).json(err);
@@ -102,11 +99,9 @@ router.get('/profile', async (req, res) => {
               'id',
               'title',
               'release_date',
-              'rating_scale',
               'rating_avg',
               'genre',
-              'esrb_rating',
-              'description'
+              'esrb_rating'
             ],
           },
         ],
@@ -115,16 +110,36 @@ router.get('/profile', async (req, res) => {
       const user = userData.get({ plain: true });
 
       res.render('profile', { user, loggedIn: req.session.loggedIn });
-    } 
+    }
     catch (err) {
       console.log(err);
       res.status(500).json(err);
     }
   }
   else {
-  res.render('login');
+    res.render('login');
   }
 });
+
+router.get('/reviews/:id', async (req, res) => {
+
+  try {
+    const allReviews = await Review.findAll({
+      where: {
+        game_id: req.params.id
+      }
+    });
+
+    const review = allReviews.map((data) =>
+      data.get({ plain: true })
+    );
+
+    res.render('allReviews', { review, loggedIn: req.session.loggedIn });
+  }
+  catch (err) {
+    res.status(500).json(err);
+  }
+})
 
 
 router.get('/login', (req, res) => {

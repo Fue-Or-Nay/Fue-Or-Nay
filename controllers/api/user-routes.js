@@ -119,7 +119,7 @@ router.post('/login', async (req, res) => {
             req.session.user_id = userInfoCheck.id;
             req.session.email = userInfoCheck.email;
             req.session.username = userInfoCheck.username;
-            res.status(200).json({ message: "Welcome!"})
+            res.status(200).json({ message: "Welcome!" })
         })
 
     }
@@ -129,13 +129,13 @@ router.post('/login', async (req, res) => {
 });
 
 router.post('/logout', (req, res) => {
-    if(req.session.loggedIn){
+    if (req.session.loggedIn) {
         req.session.destroy(() => {
-            res.status(200).json({message: "You have successfully logged out!"});
+            res.status(200).json({ message: "You have successfully logged out!" });
         });
     }
     else {
-        res.status(404).json({message: "Error logging out. Please try again!"});
+        res.status(404).json({ message: "Error logging out. Please try again!" });
     }
 });
 

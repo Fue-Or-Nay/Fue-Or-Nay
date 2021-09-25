@@ -1,69 +1,69 @@
 [
     { 
-        "num_rating": "7.7",
+        "num_rating": "4",
         "description": "This game was pretty decent for what it is. Very well made, loads of content, and the multiplayer is spot on!",
         "review_title": "Pretty Decent",
         "game_id": 1,
         "user_id": 1
     },
     {
-        "num_rating": "9.9",
+        "num_rating": "5",
         "description": "Toss a coin to your witcher, o vally o plenty....",
         "review_title": "Just when you thought The Witcher couldn't get better...",
         "game_id": 2,
         "user_id": 1
     },
     {
-        "num_rating": "5.6",
+        "num_rating": "3",
         "description": "The cake is a lie!",
         "review_title": "Yey",
         "game_id": 3,
         "user_id": 1
     },
     {
-        "num_rating": "2.1",
+        "num_rating": "2",
         "description": "Who seriously plays these types of games? Why on earth would we promote running people over with cars and firing rocket launchers off of skyscrapers? THINK OF THE CHILDREN!!!",
         "review_title": "Terrible game for families",
         "game_id": 1,
         "user_id": 3
     },
     {
-        "num_rating": "10",
+        "num_rating": "5",
         "description": "Yo this be fire man",
         "review_title": "Litty",
         "game_id": 1,
         "user_id": 2
     },
     {
-        "num_rating": "10",
+        "num_rating": "5",
         "description": "This game LIT",
         "review_title": "Ham hocks",
         "game_id": 4,
         "user_id": 2
     },
     {
-        "num_rating": "2",
+        "num_rating": "1",
         "description": "Ain't my thing",
         "review_title": "Trash",
         "game_id": 3,
         "user_id": 4
     },
     {
-        "num_rating": "6.7",
+        "num_rating": "4",
         "description": "I found the puzzles to be phenomenal but the story was lackluster. Worth a playthrough, nothing more.",
         "review_title": "Could be better...",
         "game_id": 3,
         "user_id": 5
     },
     {
-        "num_rating": "9.8",
+        "num_rating": "5",
         "description": "Traditionally this game really isn't my style, but it was very well made. Rockstar really hit the nail on the head with this one!",
         "review_title": "AMAZING, ROCKSTAR DOES IT AGAIN!!!",
         "game_id": 1,
         "user_id": 5
     },
     {
-        "num_rating": "10",
+        "num_rating": "5",
         "description": "I LOVE LOOTER SHOOTERS AND THIS IS NO EXCEPTION TO THAT STATEMENT!!!! 10/10 MUST PLAY!!!",
         "review_title": "Pew Pew",
         "game_id": 7,

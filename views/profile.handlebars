@@ -1,62 +1,119 @@
-<h2 class="profUN">{{user.username}}</h2>
-    <main class="prof">
-        <div class="profPic">
-            <img class="circle responsive-img" src="./public/Images/ntnqruv8nhq1avryljcd.jpeg">
-        </div>
+<h1 class="hide-on-small-only fuego-text fuego-pink">{{user.username}}</h1>
+<h5 class="hide-on-large-only fuego-text fuego-pink">{{user.username}}</h5>
 
-        <div class="profInfo">
-            <div class="info">
-                <p class="revTitle">'{{user.reputation_level}}'</p>
-                <p>{{user.bio}}</p>
-                <p>Total Reviews: {{user.review_count}}</p>
-                <p>Total Feedback Given: {{user.feedback_count}}</p>
+<div class="row gpCard">
+    <div class="col s12 m6 l6 push-l3 hide-on-large-only">
+        <div class="card black">
+            <div class="card-image">
+                <img src="public/Images/avatar-placeholder.png">
             </div>
-            <h4 class="fueScore">Your Fue Score:</h4>
-            <div class="badges">
-                <i class="medium material-icons pink-text lighten-5">whatshot</i>
-                <i class="medium material-icons pink-text lighten-2">whatshot</i>
-                <i class="medium material-icons pink-text lighten-2">whatshot</i>
-                <i class="medium material-icons pink-text lighten-2">whatshot</i>
-                <i class="medium material-icons pink-text lighten-2">whatshot</i>
+            <div class="card-content center-align black">
+                <p class="center-align cyan-text accent-1">
+                    Member Since: {{user.creation_date}}
+                </p>
+                <p class="center-align cyan-text accent-1">
+                    time since creation date:
+                </p>
+                <p class="center-align cyan-text accent-1">
+                    Reviews: {{user.review_count}}
+                </p>
+                <p class="center-align cyan-text accent-1">
+                    Feedback Given: {{user.feedback_count}}
+                </p>
             </div>
-        </div>
-
-
-    </main>
-    <br>
-    <h3 class="rtdGames">Your Rated Games</h3>
-    <div class="selHold">
-        <div class="carousel">
-           {{#each user.games}}
-           {{> user-games}}
-           {{/each}}
         </div>
     </div>
+</div>
+<br>
 
-    <h3 class="rtdGames">Your Top Reviews:</h3>
-    <div class="yoRev">
-        <ul class="pagination">
-            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-            <li class="active blue"><a href="#!">1</a></li>
-            <li class="waves-effect"><a href="#!">2</a></li>
-            <li class="waves-effect"><a href="#!">3</a></li>
-            <li class="waves-effect"><a href="#!">4</a></li>
-            <li class="waves-effect"><a href="#!">5</a></li>
-            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-        </ul>
-        <div class="rev">
-            <h5 class="revGme">"Reviewed Game"</h5>
-            <p class="revcontent">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
+<div class="gameBox game-card col s12 m6 l6 push-l3 hide-on-small-only">
+    <div class="card center-align">
+        <div class="card-image center-align black">
+            <img src="/Images/avatar-placeholder.png">
+        </div>
+        <div class="card-content center-align black">
+            <p class="center-align cyan-text accent-1">
+                Member Since: {{user.creation_date}}
+            </p>
+            {{!-- <p class="center-align cyan-text accent-1">
+                time since creation date:
+            </p> --}}
+            <p class="center-align cyan-text accent-1">
+                Reviews: {{user.review_count}}
+            </p>
+            <p class="center-align cyan-text accent-1">
+                Name: {{user.firstname}} {{user.lastname}}
+            </p>
+            <p class="center-align cyan-text accent-1">
+                {{!-- Feedback Given: {{user.feedback_count}} --}}
             </p>
         </div>
     </div>
+</div>
+<br>
 
+<h3 class="rtdGames"><span class="fuego-text">Your <span class="fuego-pink">Rated</span> Games</span></h3>
 
+<br>
+<br>
+<div class="">
+    <div class="carousel">
+        {{#each user.games}}
+        {{> user-games}}
+        {{/each}}
+    </div>
+</div>
+<br>
+<br>
+<br>
 
-
-    
+<h3 class="rtdGames"><span class="fuego-text">Your Most <span class="fuego-pink">Recent</span> Review</span></h3>
+<div class="section">
+    <div class="gRev center-align">
+        <div class="card black">
+            <div class="card-content">
+                <span class="gHead card-title">{{user.reviews.[0].review_title}}</span>
+                <p>
+                    {{user.reviews.[0].description}}
+                </p>
+            </div>
+            <div class="revFS">
+                {{#eq user.reviews.[0].num_rating "1"}}
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                {{/eq}}
+                {{#eq user.reviews.[0].num_rating "2"}}
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                {{/eq}}
+                {{#eq user.reviews.[0].num_rating "3"}}
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                {{/eq}}
+                {{#eq user.reviews.[0].num_rating "4"}}
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                {{/eq}}
+                {{#eq user.reviews.[0].num_rating "5"}}
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                {{/eq}}
+            </div>
+            <div class="card-action">
+                {{!-- <a class="unRev pink-text lighten-5" href="#">Create helper to return most recent review user</a>
+                --}}
+                <p>{{creation_date}}</p>
+            </div>
+            {{!-- <div class="card-action">
+                <p>Was this review helpful?</p>
+                <button><i class="material-icons tiny">thumb_up</i></button>
+                <button><i class="material-icons tiny">thumb_down</i></button>
+            </div> --}}
+        </div>
+    </div>
+</div>

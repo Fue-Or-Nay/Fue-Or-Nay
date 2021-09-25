@@ -1,114 +1,236 @@
+<a class="waves-effect waves-light btn modal-trigger pink pulse fuego-label" href="/">Back to search!</a>
+
 <div class="row gpCard">
-    <div class="col s12 m6 l6 push-l3 hide-on-large-only">
-      <div class="card">
-        <div class="card-image">
-          <img src="/Images/220px-WoW_Box_Art1.jpeg">
-          <span class="card-title black pink-text lighten-5">{{game.title}}</span>
-        </div>
-        <div class="card-content black cyan-text accent-1 center-align">
-          <p>{{game.description}}</p>
-          <div class="card-content black center-align">
-            <i class="small material-icons pink-text lighten-5">whatshot</i>
-            <i class="small material-icons pink-text lighten-5">whatshot</i>
-            <i class="small material-icons pink-text lighten-5">whatshot</i>
-            <i class="small material-icons pink-text lighten-5">whatshot</i>
-            <i class="small material-icons pink-text lighten-5">whatshot</i>
+  <div class="col s12 m6 l6 push-l3 hide-on-large-only">
+    <div class="card">
+      <div class="card-image">
+        <img src="{{game.thumbnail}}">
+      </div>
+      <div class="card-content black cyan-text accent-1 center-align">
+        <span class="card-title black pink-text lighten-5">{{game.title}}</span>
+        <div class="card-content black center-align">
+          {{#eq game.rating_avg "1"}}
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          {{/eq}}
+          {{#eq game.rating_avg "2"}}
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          {{/eq}}
+          {{#eq game.rating_avg "3"}}
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          {{/eq}}
+          {{#eq game.rating_avg "4"}}
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          {{/eq}}
+          {{#eq game.rating_avg "5"}}
+          <i class="material-icons icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          {{/eq}}
+          <div class="black">
+            <a class="waves-effect waves-light btn modal-trigger pink pulse" href="#modal1">Review this game!</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="gameBox game-card col s12 m6 l6 push-l3 hide-on-small-only">
-    <div class="card center-align">
-      <div class="card-image center-align black">
-        <img src="/Images/220px-WoW_Box_Art1.jpeg">
-        <span><a class="card-heading" href='game.html'>{{game.title}}</a></span><br>
-      </div>
-      <div class="card-content black">
-        <i class="small material-icons pink-text lighten-5">whatshot</i>
-        <i class="small material-icons pink-text lighten-5">whatshot</i>
-        <i class="small material-icons pink-text lighten-5">whatshot</i>
-        <i class="small material-icons pink-text lighten-5">whatshot</i>
-        <i class="small material-icons pink-text lighten-5">whatshot</i>
-      </div>
-    </div>
-  </div>
-
-
-<h3 class="mrr">Most Recent Review:</h3>
-  <div class="section">
-    <div class="gRev center-align">
-        <div class="card black">
-            <div class="card-content">
-                <span class="gHead card-title">Create helper to return most recent review</span>
-                <p>Create helper to return most recent review description
-                </p>
-            </div>
-            <div class="revFS">
-                <i class="material-icons pink-text lighten-5">whatshot</i>
-                <i class="material-icons pink-text lighten-5">whatshot</i>
-                <i class="material-icons pink-text lighten-5">whatshot</i>
-            </div>
-            <div class="card-action">
-                <a class="unRev pink-text lighten-5" href="#">Create helper to return most recent review user</a>
-                <p>create helper to return most recent review creation date</p>
-            </div>
-            <div class="card-action">
-                <p>Was this review helpful?</p>
-                <button><i class="material-icons tiny">thumb_up</i></button>
-                <button><i class="material-icons tiny">thumb_down</i></button>
-            </div>
-        </div>
-    </div>
 </div>
 
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Fue or Nay?</h4>
+<div class="col l3 hide-on-small-only">
+  <div class="gameBox game-card">
+    <div class="card center-align hoverable">
+      <div class="card-image center-align">
+        <img class="gcImage" src="{{game.thumbnail}}">
+      </div>
+      <div class="card-title black pink-text lighten-5">{{game.title}}</div>
+      <div class="card-content black">
+        {{#eq game.rating_avg "1"}}
+        <i class="material-icons pink-text lighten-5">whatshot</i>
+        {{/eq}}
+        {{#eq game.rating_avg "2"}}
+        <i class="material-icons pink-text lighten-5">whatshot</i>
+        <i class="material-icons pink-text lighten-5">whatshot</i>
+        {{/eq}}
+        {{#eq game.rating_avg "3"}}
+        <i class="material-icons pink-text lighten-5">whatshot</i>
+        <i class="material-icons pink-text lighten-5">whatshot</i>
+        <i class="material-icons pink-text lighten-5">whatshot</i>
+        {{/eq}}
+        {{#eq game.rating_avg "4"}}
+        <i class="material-icons pink-text lighten-5">whatshot</i>
+        <i class="material-icons pink-text lighten-5">whatshot</i>
+        <i class="material-icons pink-text lighten-5">whatshot</i>
+        <i class="material-icons pink-text lighten-5">whatshot</i>
+        {{/eq}}
+        {{#eq game.rating_avg "5"}}
+        <i class="material-icons pink-text lighten-5">whatshot</i>
+        <i class="material-icons pink-text lighten-5">whatshot</i>
+        <i class="material-icons pink-text lighten-5">whatshot</i>
+        <i class="material-icons pink-text lighten-5">whatshot</i>
+        <i class="material-icons pink-text lighten-5">whatshot</i>
+        {{/eq}}
+        <div class="black">
+          <br>
+          <a class="waves-effect waves-light btn modal-trigger pink pulse fuego-label" href="#modal1">Review this
+            game!</a>
+        </div>
+      </div>
     </div>
-    <h5>Review Title</h5>
-    <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea" data-length="20"></textarea>
-              <label for="textarea1">Write a title for your review here!</label>
-            </div>
-          </div>
-        </form>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<h3 class="rtdGames"><span class="fuego-text"><span class="fuego-pink">Game</span> Information</span></h3>
+<div class="col l6">
+  <div class="gRev center-align">
+    <div class="card black">
+      <div class="card-content">
+        <span class="gHead card-title">{{game.title}}</span>
+        <p>
+          Release Date: {{game.release_date}}
+        </p>
+        <p>
+          ESRB Rating: {{game.esrb_rating}}
+        </p>
+        <p>
+
+        </p>
       </div>
-      <h5>Which console?</h5>
-      <div class="input-field col s12" id="consoleSelect">
-        <select multiple>
+      <div class="card-action">
+        <span class="fuego-text">Available On:</span>
+        <ul>
           {{#each game.consoles}}
-          <option value="{{this.id}}">{{this.name}}</option>
+          <li>{{name}}</li>
           {{/each}}
-        </select>
+        </ul>
       </div>
-      <!--Flame rating-->
-      <h5>How fuego was this game tho?</h5>
-      <ul class="rate-area row">
-        <a class="waves-effect waves-teal btn-flat" id="fue1"><i class="medium material-icons">whatshot</i></a>
-        <a class="waves-effect waves-teal btn-flat" id="fue2"><i class="medium material-icons">whatshot</i></a>
-        <a class="waves-effect waves-teal btn-flat" id="fue3"><i class="medium material-icons">whatshot</i></a>
-        <a class="waves-effect waves-teal btn-flat" id="fue4"><i class="medium material-icons">whatshot</i></a>
-        <a class="waves-effect waves-teal btn-flat" id="fue5"><i class="medium material-icons">whatshot</i></a>
-      </ul>
-      <!--Write review-->
-      <h5>Tell us why!</h5>
+      <div class="card-action">
+        <p>Fuego Rating:
+          {{#eq game.rating_avg "1"}}
+          NAY!
+          {{/eq}}
+          {{#eq game.rating_avg "2"}}
+          NOT SO FUE!
+          {{/eq}}
+          {{#eq game.rating_avg "3"}}
+          KINDA FUE!
+          {{/eq}}
+          {{#eq game.rating_avg "4"}}
+          FUE!
+          {{/eq}}
+          {{#eq game.rating_avg "5"}}
+          <span class="fuego-text">
+            <i class="material-icons pink-text lighten-5">whatshot</i>
+            <i class="material-icons pink-text lighten-5">whatshot</i>
+            FUEGO <span class="fuego-pink">FIRE</span>
+            <i class="material-icons pink-text lighten-5">whatshot</i>
+            <i class="material-icons pink-text lighten-5">whatshot</i>
+            {{/eq}}
+      </div>
+    </div>
+  </div>
+
+  <h3 class="rtdGames"><span class="fuego-text">Most <span class="fuego-pink">Recent</span> Review</span></h3>
+  <div class="col l6">
+    <div class="gRev center-align">
+      <div class="card black">
+        <div class="card-content">
+          <span class="gHead card-title">{{game.reviews.[0].review_title}}</span>
+          <p>
+            {{game.reviews.[0].description}}
+          </p>
+        </div>
+        <div class="revFS">
+          {{#eq game.reviews.[0].num_rating "1"}}
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          {{/eq}}
+          {{#eq game.reviews.[0].num_rating "2"}}
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          {{/eq}}
+          {{#eq game.reviews.[0].num_rating "3"}}
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          {{/eq}}
+          {{#eq game.reviews.[0].num_rating "4"}}
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          {{/eq}}
+          {{#eq game.reviews.[0].num_rating "5"}}
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          <i class="material-icons pink-text lighten-5">whatshot</i>
+          {{/eq}}
+        </div>
+        {{!-- <div class="card-action">
+          <p>Was this review helpful?</p>
+          <button><i class="material-icons tiny">thumb_up</i></button>
+          <button><i class="material-icons tiny">thumb_down</i></button>
+        </div> --}}
+        <a class="waves-effect waves-light btn modal-trigger pink pulse fuego-label" href="/reviews/{{game.id}}">More
+          Reviews</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal1" class="modal black">
+    <div class="modal-content black">
+      <h5 class="fuego-text">Review <span class="fuego-pink">Title</span></h5>
       <div class="row">
         <form class="col s12">
           <div class="row">
             <div class="input-field col s12">
-              <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-              <label for="textarea2">Write Your Review Here!</label>
+              <textarea id="textarea1" class="materialize-textarea fuego-text" data-length="20"></textarea>
+              <label for="textarea1" class="fuego-label">Write a title for your review here!</label>
             </div>
           </div>
         </form>
       </div>
-      </p>
-      <div class="modal-footer">
-        <button class="modal-close waves-effect waves-green btn-flat" id="submitReview">Submit Review</button>
+      <!--Flame rating-->
+      <h5 class="fuego-text">How <span class="fuego-pink">Fuego</span> was this game, tho?</h5>
+      <div class="input-field col s12">
+        <select id="fuegoRating">
+          <option value="" disabled selected>How many fuego fires?</option>
+          <option value="5">FUEGO FIRE</option>
+          <option value="4">Fue</option>
+          <option value="3">Kinda Fue</option>
+          <option value="2">Not so Fue</option>
+          <option value="1">NAY</option>
+        </select>
       </div>
+      <br>
+      <br>
+      <h5 class="fuego-text">Tell us <span class="fuego-pink">why</span>!</h5>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea2" class="materialize-textarea fuego-text" data-length="120"></textarea>
+              <label for="textarea2" class="fuego-label">Write Your Review Here!</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer black">
+      <h1 class="fuego-text"><span class="fuego-pink">Fue</span> or Nay?</h1>
+      <button class="modal-close waves-effect waves-green btn-flat fuego-label" id="submitReview">Submit
+        Review</button>
+    </div>
   </div>
+
+  <script src="/js/addReview.js"></script>
