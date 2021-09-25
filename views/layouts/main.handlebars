@@ -1,97 +1,106 @@
-
 <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="./materialize/css/materialize.min.css" media="screen,projection" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="./materialize/css/materialize.min.css" media="screen,projection" />
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Rating system-->
-    <link rel="stylesheet" href="styles/5star.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Orbitron&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="/css/materialize.css">
-    <link rel="stylesheet" href="/css/mainstyle.css">
-    <title>Fue or Nay</title>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Rating system-->
+  <link rel="stylesheet" href="styles/5star.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="/css/materialize.css">
+  <link rel="stylesheet" href="/css/mainstyle.css">
+  <title>Fue or Nay</title>
 </head>
 
 <body>
   <nav>
-  <div class="nav-wrapper nav-extended">
-    <a href="/" class="brand-logo"><img class="logo" src="/Images/fueornay.png" /></a>
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    <ul class="right hide-on-med-and-down valign-wrapper">
-     
-      <li><a class="nav-style" href="/">Home</a></li>
-      {{#if loggedIn}}
-      <li><a class="nav-style" href="/profile/{{user.id}}">Profile</a></li>
-      <li><a class="nav-style" href="/logout" id="logout">Logout</a></li>
-      {{else}}
-      <li><a class="nav-style" href="/login" id="loginNav">Login</a></li>
-      {{/if}}
-    </ul>
-  </div>
-</nav>
+    <div class="nav-wrapper nav-extended">
+      <a href="/" class="brand-logo"><img class="logo" src="/Images/fueornay.png" /></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down valign-wrapper">
+
+        <li><a class="nav-style" href="/">Home</a></li>
+        {{#if loggedIn}}
+        <li><a class="nav-style" href="/profile/">Profile</a></li>
+        <li><a class="nav-style" href="/" id="logout">Logout</a></li>
+        {{else}}
+        <li><a class="nav-style" href="/login" id="loginNav">Login</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
 
 
-<ul class="sidenav-style sidenav sidenav-links" id="mobile-demo">
-  <li><a href="/">Home</a></li>
-  <li>
-    <div class="divider"></div>
-  </li>
-  <li><a href="/profile">Profile</a></li>
-  <li>
-    <div class="divider"></div>
-  </li>
-  <li><a href="/logout">Logout</a></li>
-  <li>
-    <div class="divider"></div>
-  </li>
-  <li>
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s10">
-          <input id="responsiveSearch" type="text" data-length="20">
-          <label class="right" for="input_text"><i class="material-icons prefix">search</i></label>
+  <ul class="sidenav-style sidenav sidenav-links" id="mobile-demo">
+    <li><a href="/">Home</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a href="/profile">Profile</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    {{#if loggedIn}}
+    <li><a href="/" id="logout2">Logout</a></li>
+    {{else}}
+    <li><a href="/login">Login</a></li>
+    {{/if}}
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li>
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s10">
+            <input id="responsiveSearch" type="text" data-length="20">
+            <label class="right" for="responsiveSearch">Enter your search here!</label>
+          </div>
         </div>
-      </div>
-    </form>
-  </li>
-</ul>
+        <button class="waves-effect waves-light btn pink fuego-label" id="responsiveSearchButton"
+          type="submit">Search</button>
+      </form>
+    </li>
+  </ul>
 
   {{{body}}}
 
   <br>
 
-<footer class="page-footer footer-color">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <a><img class="footer-logo" src="/Images/Fueornay2.png" /></a>
-        <p class="grey-text text-lighten-4 footer-heading">Find and rate the world's hottest games</p>
+  <footer class="page-footer footer-color">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <a><img class="footer-logo" src="/Images/Fueornay2.png" /></a>
+          <p class="grey-text text-lighten-4 footer-heading">Find and rate the world's hottest games</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="footer-body container">
-      © 2021 Fuego Fiesta
+    <div class="footer-copyright">
+      <div class="footer-body container">
+        © 2021 Fuego Fiesta
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
   <!--JavaScript at end of body for optimized loading-->
 
   <script type="text/javascript" src="/js/materialize.min.js"></script>
   <script type="text/javascript" src="/js/materialize.js"></script>
-  
-  {{!-- <script src="/js/login.js"></script> --}}
-  {{!-- {{#if loggedIn}} --}}
-  <script src="/js/logout.js"></script>
-  {{!-- {{/if}} --}}
-  <script src="/js/RAWGDBsync.js"></script>
-  {{!-- <script src="/js/addReview.js"></script> --}}
-  {{!-- <script src="/js/searchFunction.js"></script> --}}
-</body>
 
+  {{!--
+  <script src="/js/login.js"></script> --}}
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+  <script src="/js/RAWGDBsync.js"></script>
+  <script src="/js/helpfulOrNot.js"></script>
+
+  {{!--
+  <script src="/js/addReview.js"></script> --}}
+  {{!--
+  <script src="/js/searchFunction.js"></script> --}}
+</body>

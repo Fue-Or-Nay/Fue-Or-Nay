@@ -4,7 +4,7 @@ const { Game, Console, Review } = require('../../models');
 router.get('/', async (req, res) => {
     try {
         const allGames = await Game.findAll({
-            include: [{model: Console}, {model: Review}],
+            include: [{ model: Console }, { model: Review }],
         });
 
         res.status(200).json(allGames);
@@ -17,11 +17,11 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         const singleGame = await Game.findByPk(req.params.id, {
-            include: [{model: Review}, {model: Console}],
+            include: [{ model: Review }, { model: Console }],
         });
 
         if (!singleGame) {
-            res.status(404).json({message: 'No user is associated with this ID!'});
+            res.status(404).json({ message: 'No user is associated with this ID!' });
             return;
         }
         res.status(200).json(singleGame);

@@ -1,7 +1,7 @@
 const { Model, DataTypes, Sequelize } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Review extends Model {}
+class Review extends Model { }
 
 Review.init(
     {
@@ -20,7 +20,7 @@ Review.init(
         },
         review_title: {
             type: DataTypes.STRING,
-            allowNull: false, 
+            allowNull: false,
             validate: {
                 len: [3, 20],
             },

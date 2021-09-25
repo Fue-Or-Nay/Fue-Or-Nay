@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Console extends Model {}
+class Console extends Model { }
 
 Console.init(
     {
@@ -15,15 +15,6 @@ Console.init(
             type: DataTypes.STRING,
             allowNull: false,
             unique: true,
-        },
-        // slug: {
-        //     type: DataTypes.STRING,
-        //     allowNull: false,
-        //     unique: true,
-        // },
-        thumbnail: {
-            type: DataTypes.STRING,
-            allowNull: true,
         },
     },
     {

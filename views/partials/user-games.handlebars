@@ -1,1 +1,39 @@
-<a class="carousel-item" href="/game/{{id}}"><img src="/Images/220px-Final_Fantasy_8_ntsc-front.jpeg">{{title}}</a>
+<a href="/game/{{id}}">
+    <div class="carousel-item">
+        <div class="gameBox game-card">
+            <div class="card center-align hoverable">
+                <div class="card-image center-align">
+                    <img class="gcImage" src="{{thumbnail}}">
+                </div>
+                <div class="card-title black pink-text lighten-5">{{title}}</div>
+                <div class="card-content black">
+                    {{#eq rating_avg "1"}}
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    {{/eq}}
+                    {{#eq rating_avg "2"}}
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    {{/eq}}
+                    {{#eq rating_avg "3"}}
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    {{/eq}}
+                    {{#eq rating_avg "4"}}
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    {{/eq}}
+                    {{#eq rating_avg "5"}}
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    <i class="material-icons pink-text lighten-5">whatshot</i>
+                    {{/eq}}
+                </div>
+            </div>
+        </div>
+    </div>
+</a>

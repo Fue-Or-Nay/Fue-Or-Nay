@@ -8,19 +8,42 @@
                 </p>
             </div>
             <div class="revFS">
+                {{#eq rating_avg "1"}}
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                {{/eq}}
+                {{#eq rating_avg "2"}}
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                {{/eq}}
+                {{#eq rating_avg "3"}}
                 <i class="material-icons pink-text lighten-5">whatshot</i>
                 <i class="material-icons pink-text lighten-5">whatshot</i>
                 <i class="material-icons pink-text lighten-5">whatshot</i>
+                {{/eq}}
+                {{#eq rating_avg "4"}}
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                {{/eq}}
+                {{#eq rating_avg "5"}}
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                <i class="material-icons pink-text lighten-5">whatshot</i>
+                {{/eq}}
             </div>
             <div class="card-action">
                 <a class="unRev pink-text lighten-5" href="#">{{user.username}}</a>
                 <p>{{creation_date}}</p>
             </div>
-            <div class="card-action">
+            {{!-- <div class="card-action">
                 <p>Was this review helpful?</p>
-                <button><i class="material-icons tiny" id="helpful">thumb_up</i>{{helpful}}</button>
-                <button><i class="material-icons tiny" id="not_helpful">thumb_down</i>{{not_helpful}}</button>
-            </div>
+                <button><i class="material-icons tiny helpful" id="helpful">thumb_up</i>{{helpful}}</button>
+                <button><i class="material-icons tiny not_helpful"
+                        id="not_helpful">thumb_down</i>{{not_helpful}}</button>
+            </div> --}}
         </div>
     </div>
 </div>

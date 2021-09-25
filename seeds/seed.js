@@ -7,7 +7,7 @@ const seedConsoleGames = require('./consoleGameData.json');
 const seedUserGames = require('./userGameData.json');
 const consoleGame = require('../models/consoleGame');
 const userGame = require('../models/userGame');
-const  { User, Console, Game, Review }  = require('../models');
+const { User, Console, Game, Review } = require('../models');
 
 
 const seedAll = async () => {
@@ -18,7 +18,7 @@ const seedAll = async () => {
     await User.bulkCreate(seedUser, {
         individualHooks: true,
         returning: true,
-    }); 
+    });
 
     console.log('\n----- USERS SEEDED -----\n');
 
@@ -41,7 +41,7 @@ const seedAll = async () => {
     await userGame.bulkCreate(seedUserGames);
 
     console.log('\n----- USER GAMES SEEDED -----\n');
-    
+
     process.exit(0);
 };
 

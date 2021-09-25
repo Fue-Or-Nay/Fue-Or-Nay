@@ -2163,6 +2163,9 @@ html {
  */
 body {
   margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 /**
@@ -2197,6 +2200,7 @@ figure,
 main {
   /* 1 */
   display: block;
+flex: 1 0 auto;
 }
 
 /**
@@ -5539,7 +5543,7 @@ button.btn-floating {
 }
 
 .dropdown-content {
-  background-color: #fff;
+  background-color: #E252B9;
   margin: 0;
   display: none;
   min-width: 100px;
@@ -5581,8 +5585,10 @@ button.btn-floating {
 }
 
 .dropdown-content li > a, .dropdown-content li > span {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
   font-size: 16px;
-  color: #26a69a;
+  color: #000000;
   display: block;
   line-height: 22px;
   padding: 14px 16px;
@@ -7165,6 +7171,7 @@ select {
 }
 
 .select-wrapper input.select-dropdown {
+  font-family: 'Orbitron', sans-serif;
   position: relative;
   cursor: pointer;
   background-color: transparent;
