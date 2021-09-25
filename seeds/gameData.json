@@ -7,7 +7,6 @@
         "rating_avg": "5",
         "genre": "Action RPG",
         "esrb_rating": "M",
-
         "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png"
     },
     {
@@ -17,7 +16,7 @@
         "rating_avg": "5",
         "genre": "Action RPG",
         "esrb_rating": "M",
-        "thumbnail": "Witcher3.jpg "
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Witcher_3_cover_art.jpg/220px-Witcher_3_cover_art.jpg"
     },
     {
         "title": "Portal 2",
