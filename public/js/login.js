@@ -57,3 +57,4 @@ const createAccount = async (event) => {
 
 document.querySelector('#login').addEventListener('click', login);
 document.querySelector('#create').addEventListener('click', createAccount);
+

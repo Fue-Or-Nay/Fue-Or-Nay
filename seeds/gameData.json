@@ -68,5 +68,237 @@
         "genre": "FPS",
         "esrb_rating": "M",
         "thumbnail": "https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1631908705"
+    },
+    {
+        "title": "The Legend of Zelda: Breath of the Wild",
+        "release_date": "2017-3-3",
+        "rating_avg": "5",
+        "genre": "RPG",
+        "esrb_rating": "E",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg"
+    },
+    {
+        "title": "Deathloop",
+        "release_date": "2021-9-14",
+        "rating_avg": "3",
+        "genre": "Shooter",
+        "esrb_rating": "M",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/c/cb/Deathloop_cover_art.jpg"
+    },
+    {
+        "title": "Roblox",
+        "release_date": "2001-9-1",
+        "rating_avg": "3",
+        "genre": "Sandbox",
+        "esrb_rating": "E",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/4/48/Roblox_Player_icon.png"
+    },
+    {
+        "title": "Star Wars Jedi: Fallen Order",
+        "release_date": "2019-11-10",
+        "rating_avg": "4",
+        "genre": "RPG",
+        "esrb_rating": "M",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/1/13/Cover_art_of_Star_Wars_Jedi_Fallen_Order.jpg"
+    },
+    {
+        "title": "World of Warcraft",
+        "release_date": "2004-11-23",
+        "rating_avg": "2",
+        "genre": "MMORPG",
+        "esrb_rating": "T",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/9/91/WoW_Box_Art1.jpg/220px-WoW_Box_Art1.jpg"
+    },
+    {
+        "title": "WarioWare: Get It Together!",
+        "release_date": "2021-9-10",
+        "rating_avg": "3",
+        "genre": "Action/Adventure",
+        "esrb_rating": "E",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/6/6a/Get_It_Together_cover_art.jpg"
+    },
+    {
+        "title": "The Last of Us",
+        "release_date": "2013-6-14",
+        "rating_avg": "5",
+        "genre": "RPG",
+        "esrb_rating": "M",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg"
+    },
+    {
+        "title": "The Last of Us 2",
+        "release_date": "2020-6-19",
+        "rating_avg": "5",
+        "genre": "RPG",
+        "esrb_rating": "M",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/TLOU_P2_Box_Art_2.png/220px-TLOU_P2_Box_Art_2.png"
+    },
+    {
+        "title": "Tetris",
+        "release_date": "1984-6-6",
+        "rating_avg": "5",
+        "genre": "Action",
+        "esrb_rating": "E",
+        "thumbnail": "https://tetris.wiki/images/thumb/a/ae/The_Tetris_Company_logo_2019.png/1200px-The_Tetris_Company_logo_2019.png"
+    },
+    {
+        "title": "BioShock",
+        "release_date": "2007-8-21",
+        "rating_avg": "4",
+        "genre": "RPG",
+        "esrb_rating": "M",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/6/6d/BioShock_cover.jpg"
+    },
+    {
+        "title": "Overwatch",
+        "release_date": "2016-5-3",
+        "rating_avg": "3",
+        "genre": "Shooter",
+        "esrb_rating": "T",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Overwatch_cover_art.jpg/220px-Overwatch_cover_art.jpg"
+    },
+    {
+        "title": "Dark Souls",
+        "release_date": "2011-9-22",
+        "rating_avg": "4",
+        "genre": "RPG",
+        "esrb_rating": "M",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Dark_Souls_Cover_Art.jpg/220px-Dark_Souls_Cover_Art.jpg"
+    },
+    {
+        "title": "Watch Dogs",
+        "release_date": "2014-5-27",
+        "rating_avg": "2",
+        "genre": "Action",
+        "esrb_rating": "M",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/d/d9/Watch_Dogs_box_art.jpg"
+    },
+    {
+        "title": "Tales of Arise",
+        "release_date": "2021-9-9",
+        "rating_avg": "5",
+        "genre": "JRPG",
+        "esrb_rating": "T",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/1/15/Tales_of_Arise_Box_Art.jpg"
+    },
+    {
+        "title": "Animal Crossing: New Horizons",
+        "release_date": "2020-3-20",
+        "rating_avg": "5",
+        "genre": "RPG",
+        "esrb_rating": "E",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Animal_Crossing_New_Horizons.jpg/220px-Animal_Crossing_New_Horizons.jpg"
+    },
+    {
+        "title": "Silent Hill",
+        "release_date": "1999-1-31",
+        "rating_avg": "4",
+        "genre": "Horror",
+        "esrb_rating": "M",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/9/96/Silent_Hill_video_game_cover.png"
+    },
+    {
+        "title": "Middle-earth: Shadow of Mordor",
+        "release_date": "2014-9-30",
+        "rating_avg": "4",
+        "genre": "RPG",
+        "esrb_rating": "M",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Shadow_of_Mordor_cover_art.jpg/220px-Shadow_of_Mordor_cover_art.jpg"
+    },
+    {
+        "title": "Hades",
+        "release_date": "2018-12-6",
+        "rating_avg": "5",
+        "genre": "Rogue-Like",
+        "esrb_rating": "T",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/c/cc/Hades_cover_art.jpg"
+    },
+    {
+        "title": "Warhammer: Chaosbane",
+        "release_date": "2019-5-31",
+        "rating_avg": "1",
+        "genre": "Action",
+        "esrb_rating": "M",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/1/1c/Warhammer_Chaosbane_cover.jpg"
+    },
+    {
+        "title": "Fallout 4",
+        "release_date": "2015-11-10",
+        "rating_avg": "5",
+        "genre": "RPG",
+        "esrb_rating": "M",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/7/70/Fallout_4_cover_art.jpg"
+    },
+    {
+        "title": "Donkey Kong 64",
+        "release_date": "1999",
+        "rating_avg": "5",
+        "genre": "Adventure",
+        "esrb_rating": "E",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/a/ae/DonkeyKong64CoverArt.jpg"
+    },
+    {
+        "title": "New Pokémon Snap",
+        "release_date": "2021-4-30",
+        "rating_avg": "3",
+        "genre": "Adventure",
+        "esrb_rating": "E",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Newpokemonsnap.png/220px-Newpokemonsnap.png"
+    },
+    {
+        "title": "Paper Mario",
+        "release_date": "2000-8-11",
+        "rating_avg": "3",
+        "genre": "Action",
+        "esrb_rating": "E",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/6/61/Papermario.jpg"
+    },
+    {
+        "title": "Half-Life 2",
+        "release_date": "2004-11-16",
+        "rating_avg": "5",
+        "genre": "Action/Adventure",
+        "esrb_rating": "M",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/2/25/Half-Life_2_cover.jpg"
+    },
+    {
+        "title": "Kameo",
+        "release_date": "2005-11-7",
+        "rating_avg": "2",
+        "genre": "JRPG",
+        "esrb_rating": "T",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/0f/Kameocover.jpg"
+    },
+    {
+        "title": "Persona 5",
+        "release_date": "2016-9-15",
+        "rating_avg": "4",
+        "genre": "JRPG",
+        "esrb_rating": "M",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Persona_5_cover_art.jpg/220px-Persona_5_cover_art.jpg"
+    },
+    {
+        "title": "Final Fantasy VIII",
+        "release_date": "1999-2-11",
+        "rating_avg": "5",
+        "genre": "JRPG",
+        "esrb_rating": "T",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/5/5d/Final_Fantasy_8_ntsc-front.jpg"
+    },
+    {
+        "title": "Final Fantasy VI",
+        "release_date": "1994-4-2",
+        "rating_avg": "3",
+        "genre": "JRPG",
+        "esrb_rating": "T",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/05/Final_Fantasy_VI.jpg"
+    },
+    {
+        "title": "The Simpsons Wrestling",
+        "release_date": "2001-3-23",
+        "rating_avg": "1",
+        "genre": "Action",
+        "esrb_rating": "T",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/f/f5/The_Simpsons_Wrestling_Coverart.png"
     }
 ]
