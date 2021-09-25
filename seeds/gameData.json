@@ -1,7 +1,6 @@
 [
     {
         "title": "Grand Theft Auto V",
-        "slug": "grand-theft-auto-v",
         "release_date": "2013-09-17",
         "rating_scale": "FUE",
         "rating_avg": "5",
@@ -11,7 +10,6 @@
     },
     {
         "title": "The Witcher 3 Wild Hunt",
-        "slug": "the-witcher-3-wild-hunt",
         "release_date": "2015-05-08",
         "rating_avg": "5",
         "genre": "Action RPG",
