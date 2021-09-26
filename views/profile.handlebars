@@ -59,7 +59,9 @@
 <div class="">
     <div class="carousel">
         {{#each user.games}}
-        {{> user-games}}
+        <div class="carousel-item">
+        {{> search-results-large}}
+        </div>
         {{/each}}
     </div>
 </div>

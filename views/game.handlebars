@@ -116,16 +116,27 @@
       <div class="card-action">
         <p>Fuego Rating:
           {{#eq game.rating_avg "1"}}
-          NAY!
+          <span class="fuego-text fuego-pink">
+           NAY!
+          </span>
           {{/eq}}
           {{#eq game.rating_avg "2"}}
-          NOT SO FUE!
+          <span class="fuego-text">
+            NOT SO <span class="fuego-pink">FUE!</span>
+          </span>
           {{/eq}}
           {{#eq game.rating_avg "3"}}
-          KINDA FUE!
+          <span class="fuego-text">
+            KINDA <span class="fuego-pink">FUE!</span>
+            <i class="material-icons pink-text lighten-5">whatshot</i>
+          </span>
           {{/eq}}
           {{#eq game.rating_avg "4"}}
-          FUE!
+          <span class="fuego-text">
+            <i class="material-icons pink-text lighten-5">whatshot</i>
+            <span class="fuego-pink">FUE!</span>
+            <i class="material-icons pink-text lighten-5">whatshot</i>
+          </span>
           {{/eq}}
           {{#eq game.rating_avg "5"}}
           <span class="fuego-text">
@@ -134,7 +145,8 @@
             FUEGO <span class="fuego-pink">FIRE</span>
             <i class="material-icons pink-text lighten-5">whatshot</i>
             <i class="material-icons pink-text lighten-5">whatshot</i>
-            {{/eq}}
+          </span>
+          {{/eq}}
       </div>
     </div>
   </div>
