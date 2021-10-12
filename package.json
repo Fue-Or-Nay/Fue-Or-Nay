@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
     "connect-session-sequelize": "^7.1.2",
     "css-star-rating": "^1.2.4",
     "dotenv": "^10.0.0",
