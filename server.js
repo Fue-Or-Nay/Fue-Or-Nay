@@ -8,11 +8,16 @@ const helpers = require('handlebars-helpers')();
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
+var compression = require('compression');
 
 const app = express();
 const PORT = process.env.PORT || 3006;
 
 const hbs = exphbs.create({ helpers });
+
+ 
+// compress all responses
+app.use(compression())
 
 const sess = {
   secret: 'Super secret secret',
